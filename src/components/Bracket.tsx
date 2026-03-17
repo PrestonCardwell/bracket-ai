@@ -34,24 +34,29 @@ export default function Bracket({
 
   return (
     <div>
-      {/* Tab bar */}
-      <div className="flex items-center gap-1 mb-4 border-b border-slate-800 pb-2">
-        {TABS.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`px-4 py-2 rounded-t text-sm font-medium transition-colors
-              ${
-                activeTab === tab.id
-                  ? "bg-slate-800 text-white border-b-2 border-emerald-500"
-                  : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
-              }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-        <div className="ml-auto text-xs text-slate-500">
-          {picksCount}/63 picks
+      {/* Region selector */}
+      <div className="mb-5">
+        <div className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold mb-2 px-1">
+          Select Region
+        </div>
+        <div className="flex items-center gap-2">
+          {TABS.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all
+                ${
+                  activeTab === tab.id
+                    ? "bg-emerald-600 text-white shadow-lg shadow-emerald-600/20"
+                    : "bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 border border-slate-700"
+                }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+          <div className="ml-auto text-sm text-slate-400 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
+            {picksCount}<span className="text-slate-600">/63</span> picks
+          </div>
         </div>
       </div>
 
