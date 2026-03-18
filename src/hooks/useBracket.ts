@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { Picks, RegionName } from "@/lib/types";
-import { makePick } from "@/lib/bracket";
+import { makePick, makeFirstFourPick } from "@/lib/bracket";
 
 const STORAGE_KEY = "bracket-ai-picks";
 
@@ -27,10 +27,24 @@ export function useBracket() {
   const handlePick = useCallback(
     (gameId: string, teamId: string) => {
       setPicks((prev) => {
-        // Parse the gameId to get region, round, gameIndex
-        // Format: "region-rN-gN" or "ff-gN" or "final"
+        // First Four play-in games
+        if (gameId.startsWith("first4-")) {
+          if (prev[gameId] === teamId) {
+            // Unpick: clear this pick and any downstream that used this team
+            const next = { ...prev };
+            delete next[gameId];
+            for (const key of Object.keys(next)) {
+              if (next[key] === teamId) {
+                delete next[key];
+              }
+            }
+            return next;
+          }
+          return makeFirstFourPick(prev, gameId, teamId);
+        }
+
+        // Final Four / Championship
         if (gameId === "final" || gameId.startsWith("ff-")) {
-          // Final Four / Championship - simple toggle
           const next = { ...prev };
           if (next[gameId] === teamId) {
             delete next[gameId];
@@ -49,6 +63,7 @@ export function useBracket() {
           return next;
         }
 
+        // Regional game
         const parts = gameId.split("-");
         const region = parts[0] as RegionName;
         const round = parseInt(parts[1].slice(1));

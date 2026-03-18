@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import { bracketData } from "@/data/bracket-2026";
 import { useBracket } from "@/hooks/useBracket";
 import { useAI } from "@/hooks/useAI";
-import { getTopTeam, getBottomTeam } from "@/lib/bracket";
+import { getTopTeam, getBottomTeam, getAllTeams } from "@/lib/bracket";
 import { Team, RegionName } from "@/lib/types";
 import Bracket from "@/components/Bracket";
 import AIPanel from "@/components/AIPanel";
@@ -20,11 +20,17 @@ export default function Home() {
       let bottomTeam: Team | null = null;
       let round = 1;
 
-      if (gameId === "final" || gameId.startsWith("ff-")) {
+      if (gameId.startsWith("first4-")) {
+        // First Four play-in game
+        round = 0;
+        const ff = bracketData.firstFour.find((g) => g.id === gameId);
+        if (ff) {
+          topTeam = ff.teamA;
+          bottomTeam = ff.teamB;
+        }
+      } else if (gameId === "final" || gameId.startsWith("ff-")) {
         // Final Four / Championship
-        const allTeams = Object.values(bracketData.regions).flatMap(
-          (r) => r.teams
-        );
+        const allTeams = getAllTeams(bracketData);
         if (gameId === "final") {
           round = 6;
           const ff1Winner = picks["ff-g0"];
@@ -55,8 +61,8 @@ export default function Home() {
         round = parseInt(parts[1].slice(1));
         const gameIndex = parseInt(parts[2].slice(1));
         const region = bracketData.regions[regionName];
-        topTeam = getTopTeam(region, round, gameIndex, picks);
-        bottomTeam = getBottomTeam(region, round, gameIndex, picks);
+        topTeam = getTopTeam(region, round, gameIndex, picks, bracketData.firstFour);
+        bottomTeam = getBottomTeam(region, round, gameIndex, picks, bracketData.firstFour);
       }
 
       if (!topTeam || !bottomTeam) return;

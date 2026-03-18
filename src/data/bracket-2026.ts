@@ -1,4 +1,4 @@
-import { BracketData, Team } from "@/lib/types";
+import { BracketData, FirstFourGame, Team } from "@/lib/types";
 
 const t = (
   id: string, name: string, short: string, seed: number,
@@ -90,6 +90,39 @@ const midwest: Team[] = [
   t("tenn-st",    "Tennessee State Tigers",      "Tennessee St",15, "OVC",      "23-9",  74.2, 72.0, 45.2, 34.5, 34.5, 13.8, 13.0, 20),
 ];
 
+// First Four play-in games
+// teamA = team currently in the slot, teamB = the other play-in team
+const firstFour: FirstFourGame[] = [
+  {
+    id: "first4-west-9",
+    region: "west",
+    slotIndex: 9, // 11 seed slot (BYU's opponent)
+    teamA: west[9], // NC State
+    teamB: t("texas", "Texas Longhorns", "Texas", 11, "SEC", "18-14", 73.5, 71.8, 45.0, 34.2, 35.8, 14.2, 13.5, 75),
+  },
+  {
+    id: "first4-south-1",
+    region: "south",
+    slotIndex: 1, // 16 seed slot (Florida's opponent)
+    teamA: south[1], // Lehigh
+    teamB: t("prairie-view", "Prairie View A&M Panthers", "Prairie View", 16, "SWAC", "18-17", 70.5, 75.2, 42.8, 31.5, 32.8, 12.0, 15.2, 12),
+  },
+  {
+    id: "first4-midwest-1",
+    region: "midwest",
+    slotIndex: 1, // 16 seed slot (Michigan's opponent)
+    teamA: midwest[1], // Howard
+    teamB: t("umbc", "UMBC Retrievers", "UMBC", 16, "America East", "24-8", 74.5, 70.8, 45.8, 35.2, 34.8, 14.5, 12.0, 20),
+  },
+  {
+    id: "first4-midwest-9",
+    region: "midwest",
+    slotIndex: 9, // 11 seed slot (Tennessee's opponent)
+    teamA: midwest[9], // Miami OH
+    teamB: t("smu", "SMU Mustangs", "SMU", 11, "ACC", "20-13", 74.8, 71.2, 45.5, 35.0, 35.2, 14.5, 13.0, 72),
+  },
+];
+
 export const bracketData: BracketData = {
   year: 2026,
   regions: {
@@ -102,4 +135,5 @@ export const bracketData: BracketData = {
     ["east", "west"],
     ["south", "midwest"],
   ],
+  firstFour,
 };

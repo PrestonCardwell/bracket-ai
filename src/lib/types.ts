@@ -28,11 +28,21 @@ export interface RegionData {
   teams: Team[];
 }
 
+export interface FirstFourGame {
+  id: string; // e.g. "first4-midwest-1"
+  region: RegionName;
+  slotIndex: number; // index in region.teams this feeds into
+  teamA: Team; // one play-in team (same as the team in the slot)
+  teamB: Team; // the other play-in team
+}
+
 export interface BracketData {
   year: number;
   regions: Record<RegionName, RegionData>;
   // Which regional champions play each other in the Final Four
   finalFourMatchups: [RegionName, RegionName][];
+  // Play-in games
+  firstFour: FirstFourGame[];
 }
 
 // gameId -> teamId

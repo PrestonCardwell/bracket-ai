@@ -1,4 +1,11 @@
-import { RegionName, Picks, Team, RegionData } from "./types";
+import {
+  RegionName,
+  Picks,
+  Team,
+  RegionData,
+  BracketData,
+  FirstFourGame,
+} from "./types";
 
 export function getGameId(
   region: RegionName,
@@ -8,34 +15,95 @@ export function getGameId(
   return `${region}-r${round}-g${gameIndex}`;
 }
 
+/** Get all teams including First Four alternates */
+export function getAllTeams(data: BracketData): Team[] {
+  const regionTeams = Object.values(data.regions).flatMap((r) => r.teams);
+  const ids = new Set(regionTeams.map((t) => t.id));
+  const ffTeams = data.firstFour
+    .flatMap((ff) => [ff.teamA, ff.teamB])
+    .filter((t) => !ids.has(t.id));
+  return [...regionTeams, ...ffTeams];
+}
+
+/** Resolve a First Four slot — returns the winning team or null if not yet picked */
+function resolveFirstFourSlot(
+  firstFour: FirstFourGame[],
+  region: RegionName,
+  slotIndex: number,
+  picks: Picks
+): { hasFF: boolean; team: Team | null } {
+  const ff = firstFour.find(
+    (g) => g.region === region && g.slotIndex === slotIndex
+  );
+  if (!ff) return { hasFF: false, team: null };
+  const winnerId = picks[ff.id];
+  if (!winnerId) return { hasFF: true, team: null };
+  if (winnerId === ff.teamA.id) return { hasFF: true, team: ff.teamA };
+  if (winnerId === ff.teamB.id) return { hasFF: true, team: ff.teamB };
+  return { hasFF: true, team: null };
+}
+
 export function getTopTeam(
   region: RegionData,
   round: number,
   gameIndex: number,
-  picks: Picks
+  picks: Picks,
+  firstFour?: FirstFourGame[]
 ): Team | null {
   if (round === 1) {
-    return region.teams[gameIndex * 2] || null;
+    const slotIndex = gameIndex * 2;
+    if (firstFour) {
+      const { hasFF, team } = resolveFirstFourSlot(
+        firstFour, region.name, slotIndex, picks
+      );
+      if (hasFF) return team;
+    }
+    return region.teams[slotIndex] || null;
   }
   const feederId = getGameId(region.name, round - 1, gameIndex * 2);
   const winnerId = picks[feederId];
   if (!winnerId) return null;
-  return region.teams.find((t) => t.id === winnerId) || null;
+  // Check region teams AND first four alternates
+  const team = region.teams.find((t) => t.id === winnerId);
+  if (team) return team;
+  if (firstFour) {
+    for (const ff of firstFour) {
+      if (ff.teamA.id === winnerId) return ff.teamA;
+      if (ff.teamB.id === winnerId) return ff.teamB;
+    }
+  }
+  return null;
 }
 
 export function getBottomTeam(
   region: RegionData,
   round: number,
   gameIndex: number,
-  picks: Picks
+  picks: Picks,
+  firstFour?: FirstFourGame[]
 ): Team | null {
   if (round === 1) {
-    return region.teams[gameIndex * 2 + 1] || null;
+    const slotIndex = gameIndex * 2 + 1;
+    if (firstFour) {
+      const { hasFF, team } = resolveFirstFourSlot(
+        firstFour, region.name, slotIndex, picks
+      );
+      if (hasFF) return team;
+    }
+    return region.teams[slotIndex] || null;
   }
   const feederId = getGameId(region.name, round - 1, gameIndex * 2 + 1);
   const winnerId = picks[feederId];
   if (!winnerId) return null;
-  return region.teams.find((t) => t.id === winnerId) || null;
+  const team = region.teams.find((t) => t.id === winnerId);
+  if (team) return team;
+  if (firstFour) {
+    for (const ff of firstFour) {
+      if (ff.teamA.id === winnerId) return ff.teamA;
+      if (ff.teamB.id === winnerId) return ff.teamB;
+    }
+  }
+  return null;
 }
 
 /** Get all downstream game IDs within a region that depend on a given game */
@@ -88,8 +156,32 @@ export function makePick(
   return next;
 }
 
+/** Make a First Four pick, clearing any downstream picks for the old winner */
+export function makeFirstFourPick(
+  picks: Picks,
+  gameId: string,
+  teamId: string
+): Picks {
+  const next = { ...picks };
+  const oldWinner = next[gameId];
+  next[gameId] = teamId;
+
+  // If the old winner was picked anywhere downstream, clear those picks
+  if (oldWinner && oldWinner !== teamId) {
+    for (const key of Object.keys(next)) {
+      if (key !== gameId && next[key] === oldWinner) {
+        delete next[key];
+      }
+    }
+  }
+
+  return next;
+}
+
 export function getRoundName(round: number): string {
   switch (round) {
+    case 0:
+      return "First Four";
     case 1:
       return "Round of 64";
     case 2:

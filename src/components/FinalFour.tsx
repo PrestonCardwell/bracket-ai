@@ -1,6 +1,7 @@
 "use client";
 
 import { BracketData, Picks, Team, RegionName } from "@/lib/types";
+import { getAllTeams } from "@/lib/bracket";
 import Matchup from "./Matchup";
 
 interface FinalFourProps {
@@ -18,7 +19,7 @@ function getRegionChampion(
   const eliteEightId = `${region}-r4-g0`;
   const winnerId = picks[eliteEightId];
   if (!winnerId) return null;
-  return data.regions[region].teams.find((t) => t.id === winnerId) || null;
+  return getAllTeams(data).find((t) => t.id === winnerId) || null;
 }
 
 export default function FinalFour({
@@ -39,7 +40,7 @@ export default function FinalFour({
   const champion = picks["final"] || null;
 
   // Get the actual team objects for the championship
-  const allTeams = Object.values(data.regions).flatMap((r) => r.teams);
+  const allTeams = getAllTeams(data);
   const champTop = ff1Winner
     ? allTeams.find((t) => t.id === ff1Winner) || null
     : null;

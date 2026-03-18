@@ -55,7 +55,7 @@ export default function Bracket({
             </button>
           ))}
           <div className="ml-auto text-sm text-slate-400 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
-            {picksCount}<span className="text-slate-600">/63</span> picks
+            {picksCount}<span className="text-slate-600">/67</span> picks
           </div>
         </div>
       </div>
@@ -75,6 +75,7 @@ export default function Bracket({
             picks={picks}
             onPick={onPick}
             onAIAction={onAIAction}
+            firstFour={data.firstFour}
           />
         )}
       </div>
