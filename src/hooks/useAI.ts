@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { Team, AISettings } from "@/lib/types";
 import { SYSTEM_PROMPT, buildPickPrompt, buildInsightsPrompt } from "@/lib/prompts";
+import { decryptValue, looksLikeRawKey } from "@/lib/crypto";
 
 interface AIState {
   loading: boolean;
@@ -12,11 +13,26 @@ interface AIState {
   gameId: string | null;
 }
 
-function getSettings(): AISettings | null {
+async function getSettings(): Promise<AISettings | null> {
   try {
     const s = localStorage.getItem("bracket-ai-settings");
     if (!s) return null;
-    return JSON.parse(s);
+    const parsed = JSON.parse(s);
+
+    let apiKey = "";
+    if (parsed.encryptedKey) {
+      apiKey = await decryptValue(parsed.encryptedKey);
+    } else if (parsed.apiKey && looksLikeRawKey(parsed.apiKey)) {
+      // Legacy plain-text key — use it but it'll be migrated on next Settings visit
+      apiKey = parsed.apiKey;
+    }
+
+    if (!apiKey) return null;
+    return {
+      provider: parsed.provider,
+      apiKey,
+      model: parsed.model,
+    };
   } catch {
     return null;
   }
@@ -39,7 +55,7 @@ export function useAI() {
       bottomTeam: Team,
       round: number
     ) => {
-      const settings = getSettings();
+      const settings = await getSettings();
       if (!settings?.apiKey) {
         setState({
           loading: false,

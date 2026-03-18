@@ -32,8 +32,10 @@ export async function POST(req: NextRequest) {
 
       if (!res.ok) {
         const err = await res.text();
+        // Sanitize: never echo back anything that might contain the key
+        const safeErr = err.replace(/sk-[a-zA-Z0-9_-]+/g, "sk-***");
         return NextResponse.json(
-          { error: `OpenAI API error: ${res.status} - ${err}` },
+          { error: `OpenAI API error (${res.status}): ${safeErr}` },
           { status: res.status }
         );
       }
@@ -63,8 +65,9 @@ export async function POST(req: NextRequest) {
 
       if (!res.ok) {
         const err = await res.text();
+        const safeErr = err.replace(/sk-ant-[a-zA-Z0-9_-]+/g, "sk-ant-***");
         return NextResponse.json(
-          { error: `Anthropic API error: ${res.status} - ${err}` },
+          { error: `Anthropic API error (${res.status}): ${safeErr}` },
           { status: res.status }
         );
       }
@@ -80,8 +83,12 @@ export async function POST(req: NextRequest) {
       { status: 400 }
     );
   } catch (e) {
+    // Never include raw error details that might leak the key
+    const message =
+      e instanceof Error ? e.message : "An unexpected error occurred";
+    const safeMessage = message.replace(/sk-[a-zA-Z0-9_-]+/g, "sk-***");
     return NextResponse.json(
-      { error: `Request failed: ${e instanceof Error ? e.message : String(e)}` },
+      { error: `Request failed: ${safeMessage}` },
       { status: 500 }
     );
   }
