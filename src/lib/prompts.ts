@@ -101,15 +101,13 @@ Format your response EXACTLY like this:
 - Momentum: [compare recent form, streaks, quality wins]
 - X-factor: [star player matchup, size mismatch, tempo clash, or whatever matters most]
 
-**Bottom line:** [2-3 sentences explaining your reasoning and WHY you're making this pick. If the stats favor one team but you're picking the other, you MUST explain what tips the balance. This section is REQUIRED and must appear before the Pick line.]
-
-**Pick: [Team Name]**
+**Pick: [Team Name]** because [1-2 sentences explaining WHY. If your pick goes against what the stats suggest, you MUST explain what tips the balance. Example: "Pick: Clemson because their defensive pressure and guard play can neutralize Florida's size advantage in a one-game setting, and their 8-2 run gives them real momentum."]
 
 Rules:
 - Compare the teams HEAD TO HEAD on each bullet. Don't give separate sections per team.
 - Use plain English and actual numbers. Say "scores 78 points per game" not "78 PPG."
 - Keep the whole response compact.
-- The "Bottom line" section is MANDATORY. Never skip it. It must connect your analysis to your pick.`;
+- The "because" explanation after Pick is MANDATORY. Never write just "Pick: [Team]" alone.`;
 }
 
 export function buildInsightsPrompt(

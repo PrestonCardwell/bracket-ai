@@ -74,18 +74,23 @@ function MessageBubble({ message }: { message: ChatMessage }) {
                   </h4>
                 );
               }
-              // Pick callout — matches "Pick: X" anywhere in line, with optional bullets/bold
+              // Pick callout — matches "Pick: X" with optional "because" explanation
               const pickMatch = line.match(/(?:PICK|Pick):\s*\*{0,2}([^*\n]+)/i);
               if (pickMatch) {
-                const teamName = pickMatch[1].replace(/\*+/g, "").replace(/[.,!]+$/, "").trim();
-                // Gather reasoning lines after the pick (non-empty, non-bullet, non-header lines)
+                const rawPick = pickMatch[1].replace(/\*+/g, "").trim();
+                // Split on "because" to extract team name and reasoning
+                const becauseIdx = rawPick.toLowerCase().indexOf(" because ");
+                const teamName = (becauseIdx >= 0 ? rawPick.slice(0, becauseIdx) : rawPick).replace(/[.,!]+$/, "").trim();
+                const reasoning = becauseIdx >= 0 ? rawPick.slice(becauseIdx + 9).replace(/[.]+$/, "").trim() : "";
+
+                // Also gather any reasoning lines after the pick
                 const reasoningLines: string[] = [];
+                if (reasoning) reasoningLines.push(reasoning);
                 for (let j = i + 1; j < lines.length; j++) {
                   const nextLine = lines[j].trim();
-                  if (nextLine === "") continue; // skip blanks
+                  if (nextLine === "") continue;
                   if (nextLine.startsWith("- ") || nextLine.startsWith("* ") || nextLine.startsWith("## ") || nextLine.match(/(?:PICK|Pick):/i)) break;
                   reasoningLines.push(nextLine);
-                  // Mark these lines as consumed so they don't render again
                   lines[j] = "";
                 }
                 return (
