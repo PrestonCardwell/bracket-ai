@@ -91,24 +91,25 @@ vs.
 
 ${teamProfile(bottomTeam)}
 
-Format your response EXACTLY like this — head-to-head comparison first, then your pick:
+Format your response EXACTLY like this:
 
 **[Team A] vs [Team B]**
-- Efficiency: [Team A] is ranked #X overall, [Team B] is #Y — [who has the edge and by how much]
-- Scoring: [compare points per game, shooting percentages — who's more dangerous]
-- Defense: [compare defensive efficiency, blocks, steals — who's harder to score on]
+- Efficiency: [who has the edge and by how much]
+- Scoring: [compare points per game, shooting percentages]
+- Defense: [compare defensive efficiency, blocks, steals]
 - Rebounding: [compare boards, especially offensive rebounds]
 - Momentum: [compare recent form, streaks, quality wins]
-- X-factor: [star player matchup, size mismatch, tempo clash, or whatever matters most here]
+- X-factor: [star player matchup, size mismatch, tempo clash, or whatever matters most]
+
+**Bottom line:** [2-3 sentences explaining your reasoning and WHY you're making this pick. If the stats favor one team but you're picking the other, you MUST explain what tips the balance. This section is REQUIRED and must appear before the Pick line.]
 
 **Pick: [Team Name]**
-[2-3 sentences explaining WHY you're making this pick. If the stats favor one team but you're picking the other, explain what tips the balance. Connect your pick to the specific matchup factors above. Example: "Even though Florida has the edge in size and rebounding, Clemson's defensive pressure and hot shooting stretch can neutralize that in a single-game setting. Their tempo control and guard play give them a real path to the upset here."]
 
 Rules:
 - Compare the teams HEAD TO HEAD on each bullet. Don't give separate sections per team.
 - Use plain English and actual numbers. Say "scores 78 points per game" not "78 PPG."
-- Keep the whole response compact. No more than 12 lines total.
-- The pick explanation MUST connect to the bullet points above. If the bullets seem to favor one team but you pick the other, the explanation MUST address why you're going against what the stats suggest.`;
+- Keep the whole response compact.
+- The "Bottom line" section is MANDATORY. Never skip it. It must connect your analysis to your pick.`;
 }
 
 export function buildInsightsPrompt(
