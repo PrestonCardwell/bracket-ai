@@ -143,6 +143,7 @@ export function useChat(bracketData: BracketData, picks: Picks) {
           if (pickMatch) {
             const teamName = pickMatch[1]
               .replace(/\*+/g, "")
+              .replace(/\s+because\s.*/i, "") // strip "because" explanation
               .replace(/\s*[-–—].*/, "")   // strip after dashes
               .replace(/\.\s.*/, "")         // strip after ". " (sentence boundary)
               .replace(/[.,!]+$/, "")        // strip trailing punctuation
