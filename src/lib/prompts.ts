@@ -76,10 +76,8 @@ Upset threshold: ${upsetThreshold.toFixed(1)} (if the simulation roll is below t
 Your simulation roll: ${roll.toFixed(1)}
 
 ${roll <= upsetThreshold
-    ? `UPSET LEAN: The simulation roll (${roll.toFixed(1)}) is at or below the upset threshold (${upsetThreshold.toFixed(1)}), which suggests considering ${underdog.name} for the upset. In ${source}, the underdog wins ${(100 - favoredWinPct).toFixed(0)}% of the time, so upsets are real.
-
-However, you should ONLY pick the upset if the stats actually support a reasonable path. Look at the KenPom gap, efficiency margins, and matchup dynamics. If the favorite is clearly better across most categories (20+ KenPom rank gap with a big efficiency margin), picking the favorite is fine even on an upset roll. The roll is a nudge, not a mandate. Use your judgment based on the actual team data.`
-    : `The roll (${roll.toFixed(1)}) is above the upset threshold (${upsetThreshold.toFixed(1)}). This simulation leans toward ${favored.name}. Pick the favorite unless you see a compelling statistical reason for the upset.`
+    ? `UPSET ROLL: The roll (${roll.toFixed(1)}) is AT OR BELOW the upset threshold (${upsetThreshold.toFixed(1)}). You MUST pick ${underdog.name} unless their stats are catastrophically worse (e.g., 100+ KenPom rank gap AND bottom-tier efficiency). A moderate stats gap is NOT enough to override. March Madness has upsets for a reason. In ${source}, the underdog wins ${(100 - favoredWinPct).toFixed(0)}% of the time. Pick the underdog with conviction.`
+    : `The roll (${roll.toFixed(1)}) is ABOVE the upset threshold (${upsetThreshold.toFixed(1)}). This simulation leans toward ${favored.name}. Pick the favorite unless you see a compelling statistical reason for the upset.`
   }`;
 
   return `Pick the winner of this ${getRoundName(round)} matchup.

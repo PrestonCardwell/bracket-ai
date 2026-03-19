@@ -60,7 +60,9 @@ function MessageBubble({ message }: { message: ChatMessage }) {
           <p className="whitespace-pre-wrap">{message.content}</p>
         ) : (
           <div className="space-y-1">
-            {stripUrls(message.content).split("\n").map((line, i) => {
+            {(() => {
+              const lines = stripUrls(message.content).split("\n");
+              return lines.map((line, i) => {
               // Section headers
               if (line.startsWith("## ")) {
                 return (
@@ -76,12 +78,29 @@ function MessageBubble({ message }: { message: ChatMessage }) {
               const pickMatch = line.match(/(?:PICK|Pick):\s*\*{0,2}([^*\n]+)/i);
               if (pickMatch) {
                 const teamName = pickMatch[1].replace(/\*+/g, "").replace(/[.,!]+$/, "").trim();
+                // Gather reasoning lines after the pick (non-empty, non-bullet, non-header lines)
+                const reasoningLines: string[] = [];
+                for (let j = i + 1; j < lines.length; j++) {
+                  const nextLine = lines[j].trim();
+                  if (nextLine === "") continue; // skip blanks
+                  if (nextLine.startsWith("- ") || nextLine.startsWith("* ") || nextLine.startsWith("## ") || nextLine.match(/(?:PICK|Pick):/i)) break;
+                  reasoningLines.push(nextLine);
+                  // Mark these lines as consumed so they don't render again
+                  lines[j] = "";
+                }
                 return (
                   <div
                     key={i}
-                    className="bg-emerald-900/40 border border-emerald-600 rounded px-2.5 py-1.5 my-1.5 text-emerald-200 font-bold text-sm"
+                    className="bg-emerald-900/40 border border-emerald-600 rounded px-2.5 py-1.5 my-1.5"
                   >
-                    Pick: {teamName}
+                    <div className="text-emerald-200 font-bold text-sm">
+                      Pick: {teamName}
+                    </div>
+                    {reasoningLines.length > 0 && (
+                      <p className="text-emerald-300/80 text-xs mt-1 leading-snug font-normal">
+                        {renderInline(reasoningLines.join(" "))}
+                      </p>
+                    )}
                   </div>
                 );
               }
@@ -112,7 +131,8 @@ function MessageBubble({ message }: { message: ChatMessage }) {
                   {renderInline(line)}
                 </p>
               );
-            })}
+            });
+            })()}
           </div>
         )}
       </div>
