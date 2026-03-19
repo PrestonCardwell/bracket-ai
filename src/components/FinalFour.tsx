@@ -9,6 +9,7 @@ interface FinalFourProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
+  onCompare?: (teamA: Team, teamB: Team) => void;
 }
 
 function getRegionChampion(
@@ -27,6 +28,7 @@ export default function FinalFour({
   picks,
   onPick,
   onAIAction,
+  onCompare,
 }: FinalFourProps) {
   const [ff1Regions, ff2Regions] = data.finalFourMatchups;
 
@@ -65,6 +67,7 @@ export default function FinalFour({
               winnerId={ff1Winner}
               onPick={onPick}
               onAIAction={onAIAction}
+              onCompare={onCompare}
             />
           </div>
           <div className="text-center">
@@ -79,6 +82,7 @@ export default function FinalFour({
               winnerId={ff2Winner}
               onPick={onPick}
               onAIAction={onAIAction}
+              onCompare={onCompare}
             />
           </div>
         </div>
@@ -91,6 +95,7 @@ export default function FinalFour({
             winnerId={champion}
             onPick={onPick}
             onAIAction={onAIAction}
+            onCompare={onCompare}
           />
           {champion && (
             <div className="mt-3 px-3 py-1.5 bg-emerald-900/40 border border-emerald-600 rounded text-emerald-300 text-sm font-bold text-center">

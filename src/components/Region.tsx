@@ -1,6 +1,6 @@
 "use client";
 
-import { RegionData, Picks, FirstFourGame } from "@/lib/types";
+import { RegionData, Picks, FirstFourGame, Team } from "@/lib/types";
 import { getGameId, getTopTeam, getBottomTeam } from "@/lib/bracket";
 import Matchup from "./Matchup";
 
@@ -9,6 +9,7 @@ interface RegionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
+  onCompare?: (teamA: Team, teamB: Team) => void;
   firstFour: FirstFourGame[];
 }
 
@@ -32,6 +33,7 @@ interface BracketSectionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
+  onCompare?: (teamA: Team, teamB: Team) => void;
   firstFour: FirstFourGame[];
 }
 
@@ -42,6 +44,7 @@ function BracketSection({
   picks,
   onPick,
   onAIAction,
+  onCompare,
   firstFour,
 }: BracketSectionProps) {
   const gameId = getGameId(region.name, round, gameIndex);
@@ -58,6 +61,7 @@ function BracketSection({
         winnerId={winnerId}
         onPick={onPick}
         onAIAction={onAIAction}
+        onCompare={onCompare}
       />
     );
   }
@@ -72,6 +76,7 @@ function BracketSection({
           picks={picks}
           onPick={onPick}
           onAIAction={onAIAction}
+          onCompare={onCompare}
           firstFour={firstFour}
         />
         <BracketSection
@@ -81,6 +86,7 @@ function BracketSection({
           picks={picks}
           onPick={onPick}
           onAIAction={onAIAction}
+          onCompare={onCompare}
           firstFour={firstFour}
         />
       </div>
@@ -93,6 +99,7 @@ function BracketSection({
         winnerId={winnerId}
         onPick={onPick}
         onAIAction={onAIAction}
+        onCompare={onCompare}
       />
     </div>
   );
@@ -103,9 +110,10 @@ interface PlayInSectionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
+  onCompare?: (teamA: Team, teamB: Team) => void;
 }
 
-function PlayInSection({ games, picks, onPick, onAIAction }: PlayInSectionProps) {
+function PlayInSection({ games, picks, onPick, onAIAction, onCompare }: PlayInSectionProps) {
   return (
     <div className="mb-4 p-3 bg-slate-800/40 rounded-lg border border-amber-900/30">
       <h3 className="text-[10px] uppercase tracking-widest text-amber-400 font-semibold mb-2">
@@ -124,6 +132,7 @@ function PlayInSection({ games, picks, onPick, onAIAction }: PlayInSectionProps)
                 winnerId={picks[ff.id] || null}
                 onPick={onPick}
                 onAIAction={onAIAction}
+                onCompare={onCompare}
               />
             </div>
           );
@@ -138,6 +147,7 @@ export default function Region({
   picks,
   onPick,
   onAIAction,
+  onCompare,
   firstFour,
 }: RegionProps) {
   const regionFF = firstFour.filter((ff) => ff.region === region.name);
@@ -153,6 +163,7 @@ export default function Region({
           picks={picks}
           onPick={onPick}
           onAIAction={onAIAction}
+          onCompare={onCompare}
         />
       )}
       <BracketSection
@@ -162,6 +173,7 @@ export default function Region({
         picks={picks}
         onPick={onPick}
         onAIAction={onAIAction}
+        onCompare={onCompare}
         firstFour={firstFour}
       />
     </div>

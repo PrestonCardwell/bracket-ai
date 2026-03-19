@@ -1,21 +1,41 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
-import { Picks, RegionName } from "@/lib/types";
+import { Picks, RegionName, FirstFourGame } from "@/lib/types";
 import { makePick, makeFirstFourPick } from "@/lib/bracket";
+import { bracketData } from "@/data/bracket-2026";
 
 const STORAGE_KEY = "bracket-ai-picks";
+
+/** Build picks for completed First Four games (locked results) */
+function getLockedFirstFourPicks(): Picks {
+  const locked: Picks = {};
+  for (const ff of bracketData.firstFour) {
+    if (ff.winner === "teamA") locked[ff.id] = ff.teamA.id;
+    else if (ff.winner === "teamB") locked[ff.id] = ff.teamB.id;
+  }
+  return locked;
+}
+
+/** IDs of First Four games that are locked */
+function getLockedGameIds(): Set<string> {
+  return new Set(
+    bracketData.firstFour.filter((ff) => ff.winner).map((ff) => ff.id)
+  );
+}
 
 export function useBracket() {
   const [picks, setPicks] = useState<Picks>({});
 
-  // Load picks from localStorage on mount
+  // Load picks from localStorage on mount, then apply locked First Four results
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) setPicks(JSON.parse(saved));
+      const loaded = saved ? JSON.parse(saved) : {};
+      // Always enforce locked First Four results
+      setPicks({ ...loaded, ...getLockedFirstFourPicks() });
     } catch {
-      // ignore parse errors
+      setPicks(getLockedFirstFourPicks());
     }
   }, []);
 
@@ -29,6 +49,9 @@ export function useBracket() {
       setPicks((prev) => {
         // First Four play-in games
         if (gameId.startsWith("first4-")) {
+          // Don't allow changing locked results
+          if (getLockedGameIds().has(gameId)) return prev;
+
           if (prev[gameId] === teamId) {
             // Unpick: clear this pick and any downstream that used this team
             const next = { ...prev };
@@ -69,10 +92,28 @@ export function useBracket() {
         const round = parseInt(parts[1].slice(1));
         const gameIndex = parseInt(parts[2].slice(1));
 
-        // Toggle: if already picked this team, unpick
+        // Toggle: if already picked this team, unpick and clear downstream
         if (prev[gameId] === teamId) {
           const next = { ...prev };
           delete next[gameId];
+          // Clear all downstream picks that referenced this team
+          for (const key of Object.keys(next)) {
+            if (next[key] === teamId) {
+              // Clear Final Four / Championship picks
+              if (key.startsWith("ff-") || key === "final") {
+                delete next[key];
+              } else {
+                // Clear same-region later-round picks
+                const kparts = key.split("-");
+                if (kparts[0] === region) {
+                  const kround = parseInt(kparts[1]?.slice(1) || "0");
+                  if (kround > round) {
+                    delete next[key];
+                  }
+                }
+              }
+            }
+          }
           return next;
         }
 
@@ -83,9 +124,15 @@ export function useBracket() {
   );
 
   const resetBracket = useCallback(() => {
-    setPicks({});
-    localStorage.removeItem(STORAGE_KEY);
+    // Reset everything except locked First Four results
+    const locked = getLockedFirstFourPicks();
+    setPicks(locked);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(locked));
   }, []);
 
-  return { picks, handlePick, resetBracket };
+  const fillBracket = useCallback((newPicks: Picks) => {
+    setPicks(newPicks);
+  }, []);
+
+  return { picks, handlePick, resetBracket, fillBracket };
 }

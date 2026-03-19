@@ -1,0 +1,3856 @@
+{
+  "duke": {
+    "teamId": "duke",
+    "topPlayers": [
+      {
+        "name": "Cameron Boozer",
+        "ppg": 22.5,
+        "rpg": 10.2,
+        "apg": 4.2
+      },
+      {
+        "name": "Isaiah Evans",
+        "ppg": 14.9,
+        "rpg": 3.1,
+        "apg": 1.4
+      },
+      {
+        "name": "Patrick Ngongba II",
+        "ppg": 10.7,
+        "rpg": 6,
+        "apg": 1.9
+      }
+    ],
+    "starting5Height": 79,
+    "schedule": {
+      "last10": "10-0",
+      "winsVsTop25": 12,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 12,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Michigan Wolverines",
+          "rank": 1,
+          "score": "68-63"
+        },
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 7,
+          "score": "66-60"
+        },
+        {
+          "opponent": "Virginia Cavaliers",
+          "rank": 10,
+          "score": "74-70"
+        },
+        {
+          "opponent": "Virginia Cavaliers",
+          "rank": 11,
+          "score": "77-51"
+        },
+        {
+          "opponent": "Florida Gators",
+          "rank": 15,
+          "score": "67-66"
+        }
+      ]
+    }
+  },
+  "siena": {
+    "teamId": "siena",
+    "topPlayers": [
+      {
+        "name": "Brayden Maldonado",
+        "ppg": 14.4,
+        "rpg": 3.4,
+        "apg": 2.8
+      },
+      {
+        "name": "Will Heimbrodt",
+        "ppg": 12.3,
+        "rpg": 5.3,
+        "apg": 2.2
+      },
+      {
+        "name": "Junseok Yeo",
+        "ppg": 11.9,
+        "rpg": 4,
+        "apg": 1.5
+      }
+    ],
+    "starting5Height": 78,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "UC Davis Aggies",
+          "rank": 0,
+          "score": "79-78"
+        },
+        {
+          "opponent": "Pepperdine Waves",
+          "rank": 0,
+          "score": "83-81"
+        },
+        {
+          "opponent": "San Diego Toreros",
+          "rank": 0,
+          "score": "58-56"
+        },
+        {
+          "opponent": "UTSA Roadrunners",
+          "rank": 0,
+          "score": "71-68"
+        },
+        {
+          "opponent": "Washington Huskies",
+          "rank": 0,
+          "score": "70-66"
+        }
+      ]
+    }
+  },
+  "ohio-st": {
+    "teamId": "ohio-st",
+    "topPlayers": [
+      {
+        "name": "Bruce Thornton",
+        "ppg": 20.2,
+        "rpg": 5.1,
+        "apg": 3.9
+      },
+      {
+        "name": "John Mobley Jr.",
+        "ppg": 15.7,
+        "rpg": 2.4,
+        "apg": 2.7
+      },
+      {
+        "name": "Devin Royal",
+        "ppg": 13.7,
+        "rpg": 5.7,
+        "apg": 1.7
+      }
+    ],
+    "starting5Height": 77.8,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 8,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 8,
+      "bestWins": [
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 8,
+          "score": "82-74"
+        },
+        {
+          "opponent": "Wisconsin Badgers",
+          "rank": 24,
+          "score": "86-69"
+        },
+        {
+          "opponent": "Notre Dame Fighting Irish",
+          "rank": 0,
+          "score": "64-63"
+        },
+        {
+          "opponent": "West Virginia Mountaineers",
+          "rank": 0,
+          "score": "89-88"
+        },
+        {
+          "opponent": "Iowa Hawkeyes",
+          "rank": 0,
+          "score": "72-69"
+        }
+      ]
+    }
+  },
+  "tcu": {
+    "teamId": "tcu",
+    "topPlayers": [
+      {
+        "name": "David Punch",
+        "ppg": 14.3,
+        "rpg": 6.7,
+        "apg": 2.1
+      },
+      {
+        "name": "Xavier Edmonds",
+        "ppg": 12.6,
+        "rpg": 6.6,
+        "apg": 1.2
+      },
+      {
+        "name": "Jayden Pierre",
+        "ppg": 10.5,
+        "rpg": 2.2,
+        "apg": 2.7
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Iowa State Cyclones",
+          "rank": 5,
+          "score": "62-55"
+        },
+        {
+          "opponent": "Florida Gators",
+          "rank": 10,
+          "score": "84-80"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 10,
+          "score": "73-65"
+        }
+      ]
+    }
+  },
+  "st-johns": {
+    "teamId": "st-johns",
+    "topPlayers": [
+      {
+        "name": "Zuby Ejiofor",
+        "ppg": 16.3,
+        "rpg": 7.1,
+        "apg": 3.5
+      },
+      {
+        "name": "Bryce Hopkins",
+        "ppg": 13.5,
+        "rpg": 6.2,
+        "apg": 2
+      },
+      {
+        "name": "Oziyah Sellers",
+        "ppg": 10.7,
+        "rpg": 2.9,
+        "apg": 1.7
+      }
+    ],
+    "starting5Height": 78.2,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "UConn Huskies",
+          "rank": 3,
+          "score": "81-72"
+        },
+        {
+          "opponent": "UConn Huskies",
+          "rank": 6,
+          "score": "72-52"
+        },
+        {
+          "opponent": "Georgetown Hoyas",
+          "rank": 0,
+          "score": "72-69"
+        },
+        {
+          "opponent": "Ole Miss Rebels",
+          "rank": 0,
+          "score": "63-58"
+        },
+        {
+          "opponent": "Seton Hall Pirates",
+          "rank": 0,
+          "score": "65-60"
+        }
+      ]
+    }
+  },
+  "n-iowa": {
+    "teamId": "n-iowa",
+    "topPlayers": [
+      {
+        "name": "Trey Campbell",
+        "ppg": 13.7,
+        "rpg": 3.8,
+        "apg": 3.9
+      },
+      {
+        "name": "Leon Bond III",
+        "ppg": 11.9,
+        "rpg": 4.8,
+        "apg": 1.5
+      },
+      {
+        "name": "Will Hornseth",
+        "ppg": 11.2,
+        "rpg": 4.6,
+        "apg": 2.2
+      }
+    ],
+    "starting5Height": 78.2,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "UC Irvine Anteaters",
+          "rank": 0,
+          "score": "70-69"
+        },
+        {
+          "opponent": "Bradley Braves",
+          "rank": 0,
+          "score": "73-69"
+        },
+        {
+          "opponent": "Murray State Racers",
+          "rank": 0,
+          "score": "81-76"
+        },
+        {
+          "opponent": "UIC Flames",
+          "rank": 0,
+          "score": "60-54"
+        },
+        {
+          "opponent": "South Dakota State Jackrabbits",
+          "rank": 0,
+          "score": "65-58"
+        }
+      ]
+    }
+  },
+  "kansas": {
+    "teamId": "kansas",
+    "topPlayers": [
+      {
+        "name": "Darryn Peterson",
+        "ppg": 19.8,
+        "rpg": 4.4,
+        "apg": 1.7
+      },
+      {
+        "name": "Tre White",
+        "ppg": 13.8,
+        "rpg": 6.7,
+        "apg": 1.8
+      },
+      {
+        "name": "Flory Bidunga",
+        "ppg": 13.5,
+        "rpg": 9.2,
+        "apg": 1.5
+      }
+    ],
+    "starting5Height": 79.6,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 6,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 6,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Arizona Wildcats",
+          "rank": 1,
+          "score": "82-78"
+        },
+        {
+          "opponent": "Iowa State Cyclones",
+          "rank": 2,
+          "score": "84-63"
+        },
+        {
+          "opponent": "Houston Cougars",
+          "rank": 5,
+          "score": "69-56"
+        },
+        {
+          "opponent": "BYU Cougars",
+          "rank": 13,
+          "score": "90-82"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 13,
+          "score": "64-61"
+        }
+      ]
+    }
+  },
+  "cal-baptist": {
+    "teamId": "cal-baptist",
+    "topPlayers": [
+      {
+        "name": "Dominique Daniels Jr.",
+        "ppg": 23.2,
+        "rpg": 3.7,
+        "apg": 3.2
+      },
+      {
+        "name": "Martel Williams",
+        "ppg": 12.7,
+        "rpg": 4.8,
+        "apg": 1.6
+      },
+      {
+        "name": "Jayden Jackson",
+        "ppg": 9.3,
+        "rpg": 3.1,
+        "apg": 1.8
+      }
+    ],
+    "starting5Height": 76.2,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Tarleton State Texans",
+          "rank": 0,
+          "score": "56-55"
+        },
+        {
+          "opponent": "Abilene Christian Wildcats",
+          "rank": 0,
+          "score": "65-63"
+        },
+        {
+          "opponent": "Utah Valley Wolverines",
+          "rank": 0,
+          "score": "63-61"
+        },
+        {
+          "opponent": "Southern Utah Thunderbirds",
+          "rank": 0,
+          "score": "58-55"
+        },
+        {
+          "opponent": "Eastern Washington Eagles",
+          "rank": 0,
+          "score": "88-83"
+        }
+      ]
+    }
+  },
+  "louisville": {
+    "teamId": "louisville",
+    "topPlayers": [
+      {
+        "name": "Ryan Conwell",
+        "ppg": 18.7,
+        "rpg": 4.8,
+        "apg": 2.5
+      },
+      {
+        "name": "Mikel Brown Jr.",
+        "ppg": 18.2,
+        "rpg": 3.3,
+        "apg": 4.7
+      },
+      {
+        "name": "J'Vonne Hadley",
+        "ppg": 11.8,
+        "rpg": 5.2,
+        "apg": 1.7
+      }
+    ],
+    "starting5Height": 78.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Kentucky Wildcats",
+          "rank": 9,
+          "score": "96-88"
+        },
+        {
+          "opponent": "Indiana Hoosiers",
+          "rank": 22,
+          "score": "87-78"
+        },
+        {
+          "opponent": "Miami Hurricanes",
+          "rank": 22,
+          "score": "92-89"
+        }
+      ]
+    }
+  },
+  "s-florida": {
+    "teamId": "s-florida",
+    "topPlayers": [
+      {
+        "name": "Wes Enis",
+        "ppg": 16.8,
+        "rpg": 3.6,
+        "apg": 2.5
+      },
+      {
+        "name": "Izaiyah Nelson",
+        "ppg": 15.7,
+        "rpg": 9.6,
+        "apg": 1.2
+      },
+      {
+        "name": "Joseph Pinion",
+        "ppg": 14.2,
+        "rpg": 3.8,
+        "apg": 2.3
+      }
+    ],
+    "starting5Height": 76.8,
+    "schedule": {
+      "last10": "10-0",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Florida Atlantic Owls",
+          "rank": 0,
+          "score": "83-81"
+        },
+        {
+          "opponent": "North Texas Mean Green",
+          "rank": 0,
+          "score": "74-70"
+        },
+        {
+          "opponent": "Western Kentucky Hilltoppers",
+          "rank": 0,
+          "score": "97-91"
+        },
+        {
+          "opponent": "Charleston Cougars",
+          "rank": 0,
+          "score": "81-75"
+        },
+        {
+          "opponent": "Tulsa Golden Hurricane",
+          "rank": 0,
+          "score": "80-74"
+        }
+      ]
+    }
+  },
+  "mich-st": {
+    "teamId": "mich-st",
+    "topPlayers": [
+      {
+        "name": "Jeremy Fears Jr.",
+        "ppg": 15.7,
+        "rpg": 2.4,
+        "apg": 9.2
+      },
+      {
+        "name": "Jaxon Kohler",
+        "ppg": 12.7,
+        "rpg": 9,
+        "apg": 1.3
+      },
+      {
+        "name": "Coen Carr",
+        "ppg": 11.6,
+        "rpg": 5.4,
+        "apg": 1.3
+      }
+    ],
+    "starting5Height": 78.4,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 5,
+          "score": "85-82"
+        },
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 8,
+          "score": "76-74"
+        },
+        {
+          "opponent": "Kentucky Wildcats",
+          "rank": 12,
+          "score": "83-66"
+        },
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 14,
+          "score": "69-66"
+        },
+        {
+          "opponent": "North Carolina Tar Heels",
+          "rank": 16,
+          "score": "74-58"
+        }
+      ]
+    }
+  },
+  "ndsu": {
+    "teamId": "ndsu",
+    "topPlayers": [
+      {
+        "name": "Damari Wheeler-Thomas",
+        "ppg": 14.4,
+        "rpg": 3.5,
+        "apg": 2.8
+      },
+      {
+        "name": "Trevian Carson",
+        "ppg": 12,
+        "rpg": 6.4,
+        "apg": 2.8
+      },
+      {
+        "name": "Markhi Strickland",
+        "ppg": 11.8,
+        "rpg": 3.5,
+        "apg": 1.3
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Northern Arizona Lumberjacks",
+          "rank": 0,
+          "score": "69-68"
+        },
+        {
+          "opponent": "Oral Roberts Golden Eagles",
+          "rank": 0,
+          "score": "79-77"
+        },
+        {
+          "opponent": "Omaha Mavericks",
+          "rank": 0,
+          "score": "78-76"
+        },
+        {
+          "opponent": "St. Thomas-Minnesota Tommies",
+          "rank": 0,
+          "score": "68-65"
+        },
+        {
+          "opponent": "Drake Bulldogs",
+          "rank": 0,
+          "score": "99-94"
+        }
+      ]
+    }
+  },
+  "ucla": {
+    "teamId": "ucla",
+    "topPlayers": [
+      {
+        "name": "Tyler Bilodeau",
+        "ppg": 17.6,
+        "rpg": 5.6,
+        "apg": 1.1
+      },
+      {
+        "name": "Donovan Dent",
+        "ppg": 13.5,
+        "rpg": 2.9,
+        "apg": 7.6
+      },
+      {
+        "name": "Trent Perry",
+        "ppg": 12.7,
+        "rpg": 2.9,
+        "apg": 2.9
+      }
+    ],
+    "starting5Height": 77.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 4,
+          "score": "69-67"
+        },
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 8,
+          "score": "88-84"
+        },
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 9,
+          "score": "72-52"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 10,
+          "score": "95-94"
+        }
+      ]
+    }
+  },
+  "ucf": {
+    "teamId": "ucf",
+    "topPlayers": [
+      {
+        "name": "Riley Kugel",
+        "ppg": 14.4,
+        "rpg": 3.1,
+        "apg": 2.5
+      },
+      {
+        "name": "Themus Fulks",
+        "ppg": 14.1,
+        "rpg": 3,
+        "apg": 6.7
+      },
+      {
+        "name": "Jordan Burks",
+        "ppg": 13,
+        "rpg": 4.8,
+        "apg": 0.6
+      }
+    ],
+    "starting5Height": 77.8,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 11,
+          "score": "88-80"
+        },
+        {
+          "opponent": "Kansas Jayhawks",
+          "rank": 17,
+          "score": "81-75"
+        },
+        {
+          "opponent": "BYU Cougars",
+          "rank": 19,
+          "score": "97-84"
+        }
+      ]
+    }
+  },
+  "uconn": {
+    "teamId": "uconn",
+    "topPlayers": [
+      {
+        "name": "Tarris Reed Jr.",
+        "ppg": 13.7,
+        "rpg": 8.1,
+        "apg": 2.3
+      },
+      {
+        "name": "Solo Ball",
+        "ppg": 13.5,
+        "rpg": 3.3,
+        "apg": 1.6
+      },
+      {
+        "name": "Alex Karaban",
+        "ppg": 12.6,
+        "rpg": 5.2,
+        "apg": 2.3
+      }
+    ],
+    "starting5Height": 78.6,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 6,
+      "lossesVsTop25": 3,
+      "winsVsTop50": 6,
+      "lossesVsTop50": 3,
+      "bestWins": [
+        {
+          "opponent": "BYU Cougars",
+          "rank": 7,
+          "score": "86-84"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 13,
+          "score": "74-61"
+        },
+        {
+          "opponent": "St. John's Red Storm",
+          "rank": 15,
+          "score": "72-40"
+        },
+        {
+          "opponent": "Florida Gators",
+          "rank": 18,
+          "score": "77-73"
+        },
+        {
+          "opponent": "Kansas Jayhawks",
+          "rank": 21,
+          "score": "61-56"
+        }
+      ]
+    }
+  },
+  "furman": {
+    "teamId": "furman",
+    "topPlayers": [
+      {
+        "name": "Alex Wilkins",
+        "ppg": 17.7,
+        "rpg": 2,
+        "apg": 4.7
+      },
+      {
+        "name": "Cooper Bowser",
+        "ppg": 14,
+        "rpg": 6,
+        "apg": 1.7
+      },
+      {
+        "name": "Asa Thomas",
+        "ppg": 12.4,
+        "rpg": 3.9,
+        "apg": 1.9
+      }
+    ],
+    "starting5Height": 80.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Richmond Spiders",
+          "rank": 0,
+          "score": "73-72"
+        },
+        {
+          "opponent": "Mercer Bears",
+          "rank": 0,
+          "score": "74-72"
+        },
+        {
+          "opponent": "Samford Bulldogs",
+          "rank": 0,
+          "score": "77-73"
+        },
+        {
+          "opponent": "Samford Bulldogs",
+          "rank": 0,
+          "score": "78-73"
+        },
+        {
+          "opponent": "Chattanooga Mocs",
+          "rank": 0,
+          "score": "75-70"
+        }
+      ]
+    }
+  },
+  "arizona": {
+    "teamId": "arizona",
+    "topPlayers": [
+      {
+        "name": "Brayden Burries",
+        "ppg": 15.9,
+        "rpg": 4.7,
+        "apg": 2.5
+      },
+      {
+        "name": "Koa Peat",
+        "ppg": 13.6,
+        "rpg": 5.3,
+        "apg": 2.7
+      },
+      {
+        "name": "Jaden Bradley",
+        "ppg": 13.3,
+        "rpg": 3.6,
+        "apg": 4.5
+      }
+    ],
+    "starting5Height": 79.2,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 12,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 12,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Houston Cougars",
+          "rank": 2,
+          "score": "73-66"
+        },
+        {
+          "opponent": "Florida Gators",
+          "rank": 3,
+          "score": "93-87"
+        },
+        {
+          "opponent": "UConn Huskies",
+          "rank": 3,
+          "score": "71-67"
+        },
+        {
+          "opponent": "Houston Cougars",
+          "rank": 5,
+          "score": "79-74"
+        },
+        {
+          "opponent": "Iowa State Cyclones",
+          "rank": 6,
+          "score": "73-57"
+        }
+      ]
+    }
+  },
+  "liu": {
+    "teamId": "liu",
+    "topPlayers": [
+      {
+        "name": "Elijah Tucker",
+        "ppg": 12.5,
+        "rpg": 6.8,
+        "apg": 1.1
+      },
+      {
+        "name": "Jacoi Hutchinson",
+        "ppg": 12.3,
+        "rpg": 3.3,
+        "apg": 3.2
+      },
+      {
+        "name": "Johan Nziemi",
+        "ppg": 10.6,
+        "rpg": 6,
+        "apg": 1.8
+      }
+    ],
+    "starting5Height": 76.2,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "North Carolina Central Eagles",
+          "rank": 0,
+          "score": "74-72"
+        },
+        {
+          "opponent": "Charleston Southern Buccaneers",
+          "rank": 0,
+          "score": "81-79"
+        },
+        {
+          "opponent": "Maine Black Bears",
+          "rank": 0,
+          "score": "65-61"
+        },
+        {
+          "opponent": "Morgan State Bears",
+          "rank": 0,
+          "score": "84-80"
+        },
+        {
+          "opponent": "Presbyterian Blue Hose",
+          "rank": 0,
+          "score": "77-70"
+        }
+      ]
+    }
+  },
+  "villanova": {
+    "teamId": "villanova",
+    "topPlayers": [
+      {
+        "name": "Tyler Perkins",
+        "ppg": 13.7,
+        "rpg": 5.4,
+        "apg": 1.6
+      },
+      {
+        "name": "Duke Brennan",
+        "ppg": 12.4,
+        "rpg": 10.3,
+        "apg": 2
+      },
+      {
+        "name": "Acaden Lewis",
+        "ppg": 12.3,
+        "rpg": 3.1,
+        "apg": 5.3
+      }
+    ],
+    "starting5Height": 76.8,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "Marquette Golden Eagles",
+          "rank": 0,
+          "score": "76-73"
+        },
+        {
+          "opponent": "Marquette Golden Eagles",
+          "rank": 0,
+          "score": "77-74"
+        },
+        {
+          "opponent": "Xavier Musketeers",
+          "rank": 0,
+          "score": "92-89"
+        },
+        {
+          "opponent": "DePaul Blue Demons",
+          "rank": 0,
+          "score": "71-66"
+        },
+        {
+          "opponent": "Providence Friars",
+          "rank": 0,
+          "score": "88-82"
+        }
+      ]
+    }
+  },
+  "utah-st": {
+    "teamId": "utah-st",
+    "topPlayers": [
+      {
+        "name": "MJ Collins Jr.",
+        "ppg": 17.6,
+        "rpg": 2.4,
+        "apg": 1.6
+      },
+      {
+        "name": "Mason Falslev",
+        "ppg": 16.1,
+        "rpg": 5.8,
+        "apg": 3.1
+      },
+      {
+        "name": "Karson Templin",
+        "ppg": 9.1,
+        "rpg": 4.2,
+        "apg": 0.8
+      }
+    ],
+    "starting5Height": 76.6,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Wyoming Cowboys",
+          "rank": 0,
+          "score": "85-83"
+        },
+        {
+          "opponent": "VCU Rams",
+          "rank": 0,
+          "score": "80-77"
+        },
+        {
+          "opponent": "Montana State Bobcats",
+          "rank": 0,
+          "score": "84-81"
+        },
+        {
+          "opponent": "Colorado State Rams",
+          "rank": 0,
+          "score": "65-61"
+        },
+        {
+          "opponent": "New Mexico Lobos",
+          "rank": 0,
+          "score": "94-90"
+        }
+      ]
+    }
+  },
+  "wisconsin": {
+    "teamId": "wisconsin",
+    "topPlayers": [
+      {
+        "name": "Nick Boyd",
+        "ppg": 20.6,
+        "rpg": 3.8,
+        "apg": 4.2
+      },
+      {
+        "name": "John Blackwell",
+        "ppg": 19,
+        "rpg": 4.9,
+        "apg": 2.3
+      },
+      {
+        "name": "Nolan Winter",
+        "ppg": 13.3,
+        "rpg": 8.6,
+        "apg": 1.5
+      }
+    ],
+    "starting5Height": 78.8,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Michigan Wolverines",
+          "rank": 2,
+          "score": "91-88"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 8,
+          "score": "92-90"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 9,
+          "score": "91-88"
+        },
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 10,
+          "score": "92-71"
+        },
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 15,
+          "score": "97-93"
+        }
+      ]
+    }
+  },
+  "high-point": {
+    "teamId": "high-point",
+    "topPlayers": [
+      {
+        "name": "Terry Anderson",
+        "ppg": 16,
+        "rpg": 6,
+        "apg": 1.6
+      },
+      {
+        "name": "Rob Martin",
+        "ppg": 15.3,
+        "rpg": 1.9,
+        "apg": 3.7
+      },
+      {
+        "name": "Cam'Ron Fletcher",
+        "ppg": 12.7,
+        "rpg": 6.9,
+        "apg": 0.9
+      }
+    ],
+    "starting5Height": 75.8,
+    "schedule": {
+      "last10": "10-0",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Charleston Southern Buccaneers",
+          "rank": 0,
+          "score": "84-82"
+        },
+        {
+          "opponent": "Winthrop Eagles",
+          "rank": 0,
+          "score": "89-87"
+        },
+        {
+          "opponent": "Presbyterian Blue Hose",
+          "rank": 0,
+          "score": "84-81"
+        },
+        {
+          "opponent": "UNC Asheville Bulldogs",
+          "rank": 0,
+          "score": "75-71"
+        },
+        {
+          "opponent": "Presbyterian Blue Hose",
+          "rank": 0,
+          "score": "79-73"
+        }
+      ]
+    }
+  },
+  "arkansas": {
+    "teamId": "arkansas",
+    "topPlayers": [
+      {
+        "name": "Darius Acuff Jr.",
+        "ppg": 22.9,
+        "rpg": 3.2,
+        "apg": 6.5
+      },
+      {
+        "name": "Meleek Thomas",
+        "ppg": 15.4,
+        "rpg": 3.8,
+        "apg": 2.5
+      },
+      {
+        "name": "Trevon Brazile",
+        "ppg": 13.2,
+        "rpg": 7.4,
+        "apg": 1.5
+      }
+    ],
+    "starting5Height": 78.8,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 6,
+          "score": "89-80"
+        },
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 15,
+          "score": "93-68"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 16,
+          "score": "93-86"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 19,
+          "score": "86-75"
+        },
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 22,
+          "score": "86-75"
+        }
+      ]
+    }
+  },
+  "hawaii": {
+    "teamId": "hawaii",
+    "topPlayers": [
+      {
+        "name": "Isaac Johnson",
+        "ppg": 14.1,
+        "rpg": 5.8,
+        "apg": 1.1
+      },
+      {
+        "name": "Dre Bullock",
+        "ppg": 13.5,
+        "rpg": 5.8,
+        "apg": 1.9
+      },
+      {
+        "name": "Harry Rouhliadeff",
+        "ppg": 10.8,
+        "rpg": 5,
+        "apg": 1.4
+      }
+    ],
+    "starting5Height": 80.6,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "UC Irvine Anteaters",
+          "rank": 0,
+          "score": "67-66"
+        },
+        {
+          "opponent": "Cal State Fullerton Titans",
+          "rank": 0,
+          "score": "87-85"
+        },
+        {
+          "opponent": "UC Santa Barbara Gauchos",
+          "rank": 0,
+          "score": "78-75"
+        },
+        {
+          "opponent": "UC Davis Aggies",
+          "rank": 0,
+          "score": "77-73"
+        },
+        {
+          "opponent": "UTEP Miners",
+          "rank": 0,
+          "score": "66-61"
+        }
+      ]
+    }
+  },
+  "byu": {
+    "teamId": "byu",
+    "topPlayers": [
+      {
+        "name": "AJ Dybantsa",
+        "ppg": 25.3,
+        "rpg": 6.7,
+        "apg": 3.8
+      },
+      {
+        "name": "Robert Wright III",
+        "ppg": 18.2,
+        "rpg": 3.5,
+        "apg": 4.7
+      },
+      {
+        "name": "Richie Saunders",
+        "ppg": 18,
+        "rpg": 5.8,
+        "apg": 2.1
+      }
+    ],
+    "starting5Height": 77,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 7,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 7,
+      "bestWins": [
+        {
+          "opponent": "Iowa State Cyclones",
+          "rank": 6,
+          "score": "79-69"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 10,
+          "score": "82-76"
+        },
+        {
+          "opponent": "Wisconsin Badgers",
+          "rank": 23,
+          "score": "98-70"
+        }
+      ]
+    }
+  },
+  "nc-state": {
+    "teamId": "nc-state",
+    "topPlayers": [
+      {
+        "name": "Darrion Williams",
+        "ppg": 14,
+        "rpg": 4.6,
+        "apg": 2.8
+      },
+      {
+        "name": "Quadir Copeland",
+        "ppg": 13.9,
+        "rpg": 3.6,
+        "apg": 6.5
+      },
+      {
+        "name": "Paul McNeil Jr.",
+        "ppg": 13.8,
+        "rpg": 3.6,
+        "apg": 0.8
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "3-7",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 7,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 7,
+      "bestWins": [
+        {
+          "opponent": "North Carolina Tar Heels",
+          "rank": 16,
+          "score": "82-58"
+        },
+        {
+          "opponent": "Clemson Tigers",
+          "rank": 18,
+          "score": "80-76"
+        },
+        {
+          "opponent": "SMU Mustangs",
+          "rank": 0,
+          "score": "84-83"
+        },
+        {
+          "opponent": "VCU Rams",
+          "rank": 0,
+          "score": "85-79"
+        },
+        {
+          "opponent": "Boston College Eagles",
+          "rank": 0,
+          "score": "79-71"
+        }
+      ]
+    }
+  },
+  "gonzaga": {
+    "teamId": "gonzaga",
+    "topPlayers": [
+      {
+        "name": "Graham Ike",
+        "ppg": 19.7,
+        "rpg": 8.2,
+        "apg": 2.4
+      },
+      {
+        "name": "Braden Huff",
+        "ppg": 17.8,
+        "rpg": 5.6,
+        "apg": 1.5
+      },
+      {
+        "name": "Tyon Grant-Foster",
+        "ppg": 11.2,
+        "rpg": 5,
+        "apg": 1.2
+      }
+    ],
+    "starting5Height": 79.2,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 8,
+          "score": "95-85"
+        },
+        {
+          "opponent": "Kentucky Wildcats",
+          "rank": 18,
+          "score": "94-59"
+        },
+        {
+          "opponent": "Creighton Bluejays",
+          "rank": 23,
+          "score": "90-63"
+        },
+        {
+          "opponent": "UCLA Bruins",
+          "rank": 25,
+          "score": "82-72"
+        }
+      ]
+    }
+  },
+  "kennesaw-st": {
+    "teamId": "kennesaw-st",
+    "topPlayers": [
+      {
+        "name": "Rob Lee Jr.",
+        "ppg": 16,
+        "rpg": 3.2,
+        "apg": 2
+      },
+      {
+        "name": "Braden East",
+        "ppg": 12.8,
+        "rpg": 9.1,
+        "apg": 0.7
+      },
+      {
+        "name": "Andrew Holifield",
+        "ppg": 11.7,
+        "rpg": 4.6,
+        "apg": 1.5
+      }
+    ],
+    "starting5Height": 77.4,
+    "schedule": {
+      "last10": "1-9",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Montana Grizzlies",
+          "rank": 0,
+          "score": "68-63"
+        },
+        {
+          "opponent": "East Texas A&M Lions",
+          "rank": 0,
+          "score": "69-62"
+        },
+        {
+          "opponent": "Houston Christian Huskies",
+          "rank": 0,
+          "score": "64-56"
+        },
+        {
+          "opponent": "Louisiana Ragin' Cajuns",
+          "rank": 0,
+          "score": "65-55"
+        },
+        {
+          "opponent": "Nicholls Colonels",
+          "rank": 0,
+          "score": "90-80"
+        }
+      ]
+    }
+  },
+  "miami-fl": {
+    "teamId": "miami-fl",
+    "topPlayers": [
+      {
+        "name": "Malik Reneau",
+        "ppg": 18.8,
+        "rpg": 6.6,
+        "apg": 2
+      },
+      {
+        "name": "Tre Donaldson",
+        "ppg": 16.5,
+        "rpg": 3.5,
+        "apg": 5.8
+      },
+      {
+        "name": "Shelton Henderson",
+        "ppg": 13.7,
+        "rpg": 4.8,
+        "apg": 2
+      }
+    ],
+    "starting5Height": 78.6,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "North Carolina Tar Heels",
+          "rank": 11,
+          "score": "75-66"
+        },
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 24,
+          "score": "78-73"
+        },
+        {
+          "opponent": "NC State Wolfpack",
+          "rank": 0,
+          "score": "77-76"
+        },
+        {
+          "opponent": "Virginia Tech Hokies",
+          "rank": 0,
+          "score": "67-66"
+        },
+        {
+          "opponent": "Wake Forest Demon Deacons",
+          "rank": 0,
+          "score": "81-77"
+        }
+      ]
+    }
+  },
+  "missouri": {
+    "teamId": "missouri",
+    "topPlayers": [
+      {
+        "name": "Mark Mitchell",
+        "ppg": 18.3,
+        "rpg": 5.3,
+        "apg": 3.6
+      },
+      {
+        "name": "Jayden Stone",
+        "ppg": 13.2,
+        "rpg": 5,
+        "apg": 1.9
+      },
+      {
+        "name": "Trent Pierce",
+        "ppg": 10.6,
+        "rpg": 3.8,
+        "apg": 1.1
+      }
+    ],
+    "starting5Height": 78,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 19,
+          "score": "81-80"
+        },
+        {
+          "opponent": "Florida Gators",
+          "rank": 22,
+          "score": "76-74"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 22,
+          "score": "73-69"
+        }
+      ]
+    }
+  },
+  "purdue": {
+    "teamId": "purdue",
+    "topPlayers": [
+      {
+        "name": "Braden Smith",
+        "ppg": 14,
+        "rpg": 3.6,
+        "apg": 9.1
+      },
+      {
+        "name": "Fletcher Loyer",
+        "ppg": 13.8,
+        "rpg": 2.3,
+        "apg": 2.1
+      },
+      {
+        "name": "Trey Kaufman-Renn",
+        "ppg": 13.6,
+        "rpg": 8.5,
+        "apg": 2.6
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 6,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 6,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Michigan Wolverines",
+          "rank": 3,
+          "score": "80-72"
+        },
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 7,
+          "score": "80-77"
+        },
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 8,
+          "score": "87-80"
+        },
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 11,
+          "score": "74-58"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 15,
+          "score": "86-56"
+        }
+      ]
+    }
+  },
+  "queens": {
+    "teamId": "queens",
+    "topPlayers": [
+      {
+        "name": "Ethan Potter",
+        "ppg": 16.8,
+        "rpg": 7.8,
+        "apg": 1.9
+      },
+      {
+        "name": "Chance Trujillo",
+        "ppg": 12.3,
+        "rpg": 3.4,
+        "apg": 2.7
+      },
+      {
+        "name": "Jusaun Holt",
+        "ppg": 12,
+        "rpg": 4.1,
+        "apg": 3.4
+      }
+    ],
+    "starting5Height": 78.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "South Dakota Coyotes",
+          "rank": 0,
+          "score": "81-79"
+        },
+        {
+          "opponent": "Weber State Wildcats",
+          "rank": 0,
+          "score": "82-80"
+        },
+        {
+          "opponent": "UT Arlington Mavericks",
+          "rank": 0,
+          "score": "87-84"
+        },
+        {
+          "opponent": "Tarleton State Texans",
+          "rank": 0,
+          "score": "75-71"
+        },
+        {
+          "opponent": "Utah Valley Wolverines",
+          "rank": 0,
+          "score": "81-77"
+        }
+      ]
+    }
+  },
+  "florida": {
+    "teamId": "florida",
+    "topPlayers": [
+      {
+        "name": "Thomas Haugh",
+        "ppg": 17.1,
+        "rpg": 6.2,
+        "apg": 2
+      },
+      {
+        "name": "Alex Condon",
+        "ppg": 15,
+        "rpg": 7.7,
+        "apg": 3.5
+      },
+      {
+        "name": "Boogie Fland",
+        "ppg": 11.6,
+        "rpg": 2.5,
+        "apg": 3.4
+      }
+    ],
+    "starting5Height": 79.4,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 6,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 6,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 10,
+          "score": "98-94"
+        },
+        {
+          "opponent": "Georgia Bulldogs",
+          "rank": 18,
+          "score": "92-77"
+        },
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 20,
+          "score": "111-77"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 21,
+          "score": "91-67"
+        },
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 23,
+          "score": "100-77"
+        }
+      ]
+    }
+  },
+  "lehigh": {
+    "teamId": "lehigh",
+    "topPlayers": [
+      {
+        "name": "Nasir Whitlock",
+        "ppg": 21,
+        "rpg": 3.5,
+        "apg": 3.4
+      },
+      {
+        "name": "Hank Alvey",
+        "ppg": 15,
+        "rpg": 6.9,
+        "apg": 2.1
+      },
+      {
+        "name": "Joshua Ingram",
+        "ppg": 10.6,
+        "rpg": 5.1,
+        "apg": 3.3
+      }
+    ],
+    "starting5Height": 77.2,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Colgate Raiders",
+          "rank": 0,
+          "score": "78-77"
+        },
+        {
+          "opponent": "Colgate Raiders",
+          "rank": 0,
+          "score": "77-76"
+        },
+        {
+          "opponent": "Boston University Terriers",
+          "rank": 0,
+          "score": "93-91"
+        },
+        {
+          "opponent": "Boston University Terriers",
+          "rank": 0,
+          "score": "70-67"
+        },
+        {
+          "opponent": "Holy Cross Crusaders",
+          "rank": 0,
+          "score": "69-66"
+        }
+      ]
+    }
+  },
+  "clemson": {
+    "teamId": "clemson",
+    "topPlayers": [
+      {
+        "name": "RJ Godfrey",
+        "ppg": 11.9,
+        "rpg": 5.3,
+        "apg": 1.6
+      },
+      {
+        "name": "Carter Welling",
+        "ppg": 10.2,
+        "rpg": 5.4,
+        "apg": 1.1
+      },
+      {
+        "name": "Jestin Porter",
+        "ppg": 9.6,
+        "rpg": 1.8,
+        "apg": 1.3
+      }
+    ],
+    "starting5Height": 78.4,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 3,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 3,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "North Carolina Tar Heels",
+          "rank": 19,
+          "score": "80-79"
+        },
+        {
+          "opponent": "SMU Mustangs",
+          "rank": 24,
+          "score": "74-70"
+        },
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 24,
+          "score": "80-75"
+        }
+      ]
+    }
+  },
+  "iowa": {
+    "teamId": "iowa",
+    "topPlayers": [
+      {
+        "name": "Bennett Stirtz",
+        "ppg": 20,
+        "rpg": 2.5,
+        "apg": 4.5
+      },
+      {
+        "name": "Tavion Banks",
+        "ppg": 10.5,
+        "rpg": 4.7,
+        "apg": 1.2
+      },
+      {
+        "name": "Alvaro Folgueiras",
+        "ppg": 8.1,
+        "rpg": 3.8,
+        "apg": 2.3
+      }
+    ],
+    "starting5Height": 79.6,
+    "schedule": {
+      "last10": "3-7",
+      "winsVsTop25": 1,
+      "lossesVsTop25": 8,
+      "winsVsTop50": 1,
+      "lossesVsTop50": 8,
+      "bestWins": [
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 9,
+          "score": "57-52"
+        },
+        {
+          "opponent": "USC Trojans",
+          "rank": 0,
+          "score": "73-72"
+        },
+        {
+          "opponent": "Ole Miss Rebels",
+          "rank": 0,
+          "score": "74-69"
+        },
+        {
+          "opponent": "Rutgers Scarlet Knights",
+          "rank": 0,
+          "score": "68-62"
+        },
+        {
+          "opponent": "Northwestern Wildcats",
+          "rank": 0,
+          "score": "76-70"
+        }
+      ]
+    }
+  },
+  "vanderbilt": {
+    "teamId": "vanderbilt",
+    "topPlayers": [
+      {
+        "name": "Tyler Tanner",
+        "ppg": 19.1,
+        "rpg": 3.6,
+        "apg": 5.1
+      },
+      {
+        "name": "Duke Miles",
+        "ppg": 16.5,
+        "rpg": 3.2,
+        "apg": 4.5
+      },
+      {
+        "name": "Tyler Nickel",
+        "ppg": 13.5,
+        "rpg": 3.2,
+        "apg": 1.2
+      }
+    ],
+    "starting5Height": 76.6,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 3,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 3,
+      "bestWins": [
+        {
+          "opponent": "Florida Gators",
+          "rank": 4,
+          "score": "91-74"
+        },
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 13,
+          "score": "96-90"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 23,
+          "score": "86-82"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 25,
+          "score": "75-68"
+        }
+      ]
+    }
+  },
+  "mcneese": {
+    "teamId": "mcneese",
+    "topPlayers": [
+      {
+        "name": "Larry Johnson",
+        "ppg": 17.5,
+        "rpg": 5.5,
+        "apg": 1.4
+      },
+      {
+        "name": "Tyshawn Archie",
+        "ppg": 14.3,
+        "rpg": 1.9,
+        "apg": 2.9
+      },
+      {
+        "name": "Javohn Garcia",
+        "ppg": 12,
+        "rpg": 3.1,
+        "apg": 1.6
+      }
+    ],
+    "starting5Height": 75.4,
+    "schedule": {
+      "last10": "10-0",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Lamar Cardinals",
+          "rank": 0,
+          "score": "64-63"
+        },
+        {
+          "opponent": "Rhode Island Rams",
+          "rank": 0,
+          "score": "66-64"
+        },
+        {
+          "opponent": "Stephen F. Austin Lumberjacks",
+          "rank": 0,
+          "score": "66-64"
+        },
+        {
+          "opponent": "New Orleans Privateers",
+          "rank": 0,
+          "score": "66-63"
+        },
+        {
+          "opponent": "Houston Christian Huskies",
+          "rank": 0,
+          "score": "73-69"
+        }
+      ]
+    }
+  },
+  "nebraska": {
+    "teamId": "nebraska",
+    "topPlayers": [
+      {
+        "name": "Pryce Sandfort",
+        "ppg": 17.8,
+        "rpg": 4.8,
+        "apg": 2
+      },
+      {
+        "name": "Rienk Mast",
+        "ppg": 13.5,
+        "rpg": 5.8,
+        "apg": 2.9
+      },
+      {
+        "name": "Braden Frager",
+        "ppg": 11.6,
+        "rpg": 3.8,
+        "apg": 0.9
+      }
+    ],
+    "starting5Height": 77.4,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 9,
+          "score": "58-56"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 13,
+          "score": "83-80"
+        },
+        {
+          "opponent": "Kansas State Wildcats",
+          "rank": 0,
+          "score": "86-85"
+        },
+        {
+          "opponent": "Ohio State Buckeyes",
+          "rank": 0,
+          "score": "72-69"
+        },
+        {
+          "opponent": "Oklahoma Sooners",
+          "rank": 0,
+          "score": "105-99"
+        }
+      ]
+    }
+  },
+  "troy": {
+    "teamId": "troy",
+    "topPlayers": [
+      {
+        "name": "Thomas Dowd",
+        "ppg": 14.8,
+        "rpg": 10.1,
+        "apg": 2.2
+      },
+      {
+        "name": "Victor Valdes",
+        "ppg": 14.8,
+        "rpg": 4,
+        "apg": 4.6
+      },
+      {
+        "name": "Theo Seng",
+        "ppg": 12.9,
+        "rpg": 5.8,
+        "apg": 1.1
+      }
+    ],
+    "starting5Height": 77.4,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "San Diego State Aztecs",
+          "rank": 0,
+          "score": "108-107"
+        },
+        {
+          "opponent": "UAB Blazers",
+          "rank": 0,
+          "score": "86-85"
+        },
+        {
+          "opponent": "UL Monroe Warhawks",
+          "rank": 0,
+          "score": "77-76"
+        },
+        {
+          "opponent": "Furman Paladins",
+          "rank": 0,
+          "score": "64-61"
+        },
+        {
+          "opponent": "Georgia Southern Eagles",
+          "rank": 0,
+          "score": "83-78"
+        }
+      ]
+    }
+  },
+  "unc": {
+    "teamId": "unc",
+    "topPlayers": [
+      {
+        "name": "Caleb Wilson",
+        "ppg": 19.8,
+        "rpg": 9.4,
+        "apg": 2.7
+      },
+      {
+        "name": "Henri Veesaar",
+        "ppg": 16.7,
+        "rpg": 8.7,
+        "apg": 2
+      },
+      {
+        "name": "Seth Trimble",
+        "ppg": 14,
+        "rpg": 3.6,
+        "apg": 2.8
+      }
+    ],
+    "starting5Height": 80.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Duke Blue Devils",
+          "rank": 4,
+          "score": "71-68"
+        },
+        {
+          "opponent": "Virginia Cavaliers",
+          "rank": 14,
+          "score": "85-80"
+        },
+        {
+          "opponent": "Kentucky Wildcats",
+          "rank": 18,
+          "score": "67-64"
+        },
+        {
+          "opponent": "Kansas Jayhawks",
+          "rank": 19,
+          "score": "87-74"
+        },
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 24,
+          "score": "77-74"
+        }
+      ]
+    }
+  },
+  "vcu": {
+    "teamId": "vcu",
+    "topPlayers": [
+      {
+        "name": "Terrence Hill Jr.",
+        "ppg": 14.4,
+        "rpg": 2.5,
+        "apg": 2.8
+      },
+      {
+        "name": "Lazar Djokovic",
+        "ppg": 13.5,
+        "rpg": 5.4,
+        "apg": 1
+      },
+      {
+        "name": "Jadrian Tracey",
+        "ppg": 9.9,
+        "rpg": 2.9,
+        "apg": 1.8
+      }
+    ],
+    "starting5Height": 77,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 3,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 3,
+      "bestWins": [
+        {
+          "opponent": "Fordham Rams",
+          "rank": 0,
+          "score": "63-59"
+        },
+        {
+          "opponent": "George Mason Patriots",
+          "rank": 0,
+          "score": "70-65"
+        },
+        {
+          "opponent": "Duquesne Dukes",
+          "rank": 0,
+          "score": "71-66"
+        },
+        {
+          "opponent": "Davidson Wildcats",
+          "rank": 0,
+          "score": "75-69"
+        },
+        {
+          "opponent": "Dayton Flyers",
+          "rank": 0,
+          "score": "68-62"
+        }
+      ]
+    }
+  },
+  "illinois": {
+    "teamId": "illinois",
+    "topPlayers": [
+      {
+        "name": "Keaton Wagler",
+        "ppg": 17.9,
+        "rpg": 4.8,
+        "apg": 4.4
+      },
+      {
+        "name": "David Mirkovic",
+        "ppg": 13.4,
+        "rpg": 7.8,
+        "apg": 2.6
+      },
+      {
+        "name": "Andrej Stojakovic",
+        "ppg": 13.4,
+        "rpg": 4.6,
+        "apg": 1
+      }
+    ],
+    "starting5Height": 79.4,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 4,
+          "score": "88-82"
+        },
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 5,
+          "score": "78-69"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 11,
+          "score": "81-77"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 13,
+          "score": "75-62"
+        },
+        {
+          "opponent": "Iowa Hawkeyes",
+          "rank": 19,
+          "score": "75-69"
+        }
+      ]
+    }
+  },
+  "penn": {
+    "teamId": "penn",
+    "topPlayers": [
+      {
+        "name": "Ethan Roberts",
+        "ppg": 16.9,
+        "rpg": 3.9,
+        "apg": 2.3
+      },
+      {
+        "name": "TJ Power",
+        "ppg": 16.8,
+        "rpg": 7.9,
+        "apg": 2.4
+      },
+      {
+        "name": "Michael Zanoni",
+        "ppg": 11.6,
+        "rpg": 2,
+        "apg": 0.7
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Princeton Tigers",
+          "rank": 0,
+          "score": "61-60"
+        },
+        {
+          "opponent": "La Salle Explorers",
+          "rank": 0,
+          "score": "73-71"
+        },
+        {
+          "opponent": "Lafayette Leopards",
+          "rank": 0,
+          "score": "74-72"
+        },
+        {
+          "opponent": "Harvard Crimson",
+          "rank": 0,
+          "score": "62-60"
+        },
+        {
+          "opponent": "Harvard Crimson",
+          "rank": 0,
+          "score": "64-61"
+        }
+      ]
+    }
+  },
+  "st-marys": {
+    "teamId": "st-marys",
+    "topPlayers": [
+      {
+        "name": "Paulius Murauskas",
+        "ppg": 18.8,
+        "rpg": 7.7,
+        "apg": 2.2
+      },
+      {
+        "name": "Mikey Lewis",
+        "ppg": 14.2,
+        "rpg": 2.8,
+        "apg": 2.2
+      },
+      {
+        "name": "Joshua Dent",
+        "ppg": 13,
+        "rpg": 2.4,
+        "apg": 5.7
+      }
+    ],
+    "starting5Height": 79,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 1,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 1,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Gonzaga Bulldogs",
+          "rank": 9,
+          "score": "70-59"
+        },
+        {
+          "opponent": "Seattle U Redhawks",
+          "rank": 0,
+          "score": "72-70"
+        },
+        {
+          "opponent": "Wichita State Shockers",
+          "rank": 0,
+          "score": "70-65"
+        },
+        {
+          "opponent": "Northern Iowa Panthers",
+          "rank": 0,
+          "score": "63-58"
+        },
+        {
+          "opponent": "Loyola Marymount Lions",
+          "rank": 0,
+          "score": "78-73"
+        }
+      ]
+    }
+  },
+  "texas-am": {
+    "teamId": "texas-am",
+    "topPlayers": [
+      {
+        "name": "Rashaun Agee",
+        "ppg": 14.7,
+        "rpg": 8.9,
+        "apg": 2.4
+      },
+      {
+        "name": "Rylan Griffen",
+        "ppg": 11.6,
+        "rpg": 2.8,
+        "apg": 2.6
+      },
+      {
+        "name": "Marcus Hill",
+        "ppg": 10.8,
+        "rpg": 3.2,
+        "apg": 1.6
+      }
+    ],
+    "starting5Height": 78,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Auburn Tigers",
+          "rank": 0,
+          "score": "90-88"
+        },
+        {
+          "opponent": "LSU Tigers",
+          "rank": 0,
+          "score": "75-72"
+        },
+        {
+          "opponent": "Ole Miss Rebels",
+          "rank": 0,
+          "score": "80-77"
+        },
+        {
+          "opponent": "LSU Tigers",
+          "rank": 0,
+          "score": "94-91"
+        },
+        {
+          "opponent": "Texas Longhorns",
+          "rank": 0,
+          "score": "74-70"
+        }
+      ]
+    }
+  },
+  "houston": {
+    "teamId": "houston",
+    "topPlayers": [
+      {
+        "name": "Kingston Flemings",
+        "ppg": 16.4,
+        "rpg": 3.9,
+        "apg": 5.3
+      },
+      {
+        "name": "Emanuel Sharp",
+        "ppg": 15.3,
+        "rpg": 2.9,
+        "apg": 1.8
+      },
+      {
+        "name": "Milos Uzan",
+        "ppg": 11.1,
+        "rpg": 2.6,
+        "apg": 4
+      }
+    ],
+    "starting5Height": 78,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 14,
+          "score": "94-85"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 14,
+          "score": "69-65"
+        },
+        {
+          "opponent": "Kansas Jayhawks",
+          "rank": 14,
+          "score": "69-47"
+        },
+        {
+          "opponent": "BYU Cougars",
+          "rank": 16,
+          "score": "77-66"
+        },
+        {
+          "opponent": "Auburn Tigers",
+          "rank": 22,
+          "score": "73-72"
+        }
+      ]
+    }
+  },
+  "idaho": {
+    "teamId": "idaho",
+    "topPlayers": [
+      {
+        "name": "Kristian Gonzalez",
+        "ppg": 18,
+        "rpg": 1,
+        "apg": 0
+      },
+      {
+        "name": "Jackson Rasmussen",
+        "ppg": 13.9,
+        "rpg": 4.7,
+        "apg": 1.3
+      },
+      {
+        "name": "Kolton Mitchell",
+        "ppg": 13.7,
+        "rpg": 3.3,
+        "apg": 3.9
+      }
+    ],
+    "starting5Height": 75.4,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Washington State Cougars",
+          "rank": 0,
+          "score": "83-81"
+        },
+        {
+          "opponent": "South Dakota State Jackrabbits",
+          "rank": 0,
+          "score": "84-81"
+        },
+        {
+          "opponent": "Cal Poly Mustangs",
+          "rank": 0,
+          "score": "83-80"
+        },
+        {
+          "opponent": "Eastern Washington Eagles",
+          "rank": 0,
+          "score": "84-81"
+        },
+        {
+          "opponent": "Montana State Bobcats",
+          "rank": 0,
+          "score": "92-89"
+        }
+      ]
+    }
+  },
+  "michigan": {
+    "teamId": "michigan",
+    "topPlayers": [
+      {
+        "name": "Yaxel Lendeborg",
+        "ppg": 14.6,
+        "rpg": 7,
+        "apg": 3.2
+      },
+      {
+        "name": "Morez Johnson Jr.",
+        "ppg": 13.1,
+        "rpg": 7.2,
+        "apg": 1.1
+      },
+      {
+        "name": "Aday Mara",
+        "ppg": 11.6,
+        "rpg": 6.9,
+        "apg": 2.3
+      }
+    ],
+    "starting5Height": 79.6,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 9,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 9,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Nebraska Cornhuskers",
+          "rank": 5,
+          "score": "75-72"
+        },
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 7,
+          "score": "83-71"
+        },
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 7,
+          "score": "91-80"
+        },
+        {
+          "opponent": "Michigan State Spartans",
+          "rank": 8,
+          "score": "90-80"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 10,
+          "score": "84-70"
+        }
+      ]
+    }
+  },
+  "howard": {
+    "teamId": "howard",
+    "topPlayers": [
+      {
+        "name": "Bryce Harris",
+        "ppg": 17.1,
+        "rpg": 7.1,
+        "apg": 2.5
+      },
+      {
+        "name": "Cedric Taylor III",
+        "ppg": 17.1,
+        "rpg": 6.7,
+        "apg": 3.2
+      },
+      {
+        "name": "Ose Okojie",
+        "ppg": 10.8,
+        "rpg": 3.8,
+        "apg": 1.7
+      }
+    ],
+    "starting5Height": 76,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "UNC Wilmington Seahawks",
+          "rank": 0,
+          "score": "67-66"
+        },
+        {
+          "opponent": "North Carolina A&T Aggies",
+          "rank": 0,
+          "score": "73-69"
+        },
+        {
+          "opponent": "Hampton Pirates",
+          "rank": 0,
+          "score": "61-57"
+        },
+        {
+          "opponent": "North Carolina Central Eagles",
+          "rank": 0,
+          "score": "70-63"
+        },
+        {
+          "opponent": "Alcorn State Braves",
+          "rank": 0,
+          "score": "72-64"
+        }
+      ]
+    }
+  },
+  "georgia": {
+    "teamId": "georgia",
+    "topPlayers": [
+      {
+        "name": "Jeremiah Wilkinson",
+        "ppg": 17,
+        "rpg": 2,
+        "apg": 1.8
+      },
+      {
+        "name": "Blue Cain",
+        "ppg": 13.3,
+        "rpg": 5.1,
+        "apg": 2.7
+      },
+      {
+        "name": "Kanon Catchings",
+        "ppg": 12,
+        "rpg": 4.8,
+        "apg": 1.2
+      }
+    ],
+    "starting5Height": 77,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 2,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 2,
+      "bestWins": [
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 16,
+          "score": "98-88"
+        },
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 17,
+          "score": "90-76"
+        },
+        {
+          "opponent": "Xavier Musketeers",
+          "rank": 0,
+          "score": "78-77"
+        },
+        {
+          "opponent": "Missouri Tigers",
+          "rank": 0,
+          "score": "74-72"
+        },
+        {
+          "opponent": "Auburn Tigers",
+          "rank": 0,
+          "score": "104-100"
+        }
+      ]
+    }
+  },
+  "saint-louis": {
+    "teamId": "saint-louis",
+    "topPlayers": [
+      {
+        "name": "Robbie Avila",
+        "ppg": 12.9,
+        "rpg": 4.5,
+        "apg": 4.1
+      },
+      {
+        "name": "Dion Brown",
+        "ppg": 11.1,
+        "rpg": 5.5,
+        "apg": 1.5
+      },
+      {
+        "name": "Trey Green",
+        "ppg": 11.1,
+        "rpg": 2.8,
+        "apg": 1.7
+      }
+    ],
+    "starting5Height": 77,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Santa Clara Broncos",
+          "rank": 0,
+          "score": "71-70"
+        },
+        {
+          "opponent": "George Washington Revolutionaries",
+          "rank": 0,
+          "score": "79-76"
+        },
+        {
+          "opponent": "Duquesne Dukes",
+          "rank": 0,
+          "score": "81-77"
+        },
+        {
+          "opponent": "George Washington Revolutionaries",
+          "rank": 0,
+          "score": "88-81"
+        },
+        {
+          "opponent": "VCU Rams",
+          "rank": 0,
+          "score": "71-62"
+        }
+      ]
+    }
+  },
+  "texas-tech": {
+    "teamId": "texas-tech",
+    "topPlayers": [
+      {
+        "name": "JT Toppin",
+        "ppg": 21.8,
+        "rpg": 10.8,
+        "apg": 2.1
+      },
+      {
+        "name": "Christian Anderson",
+        "ppg": 18.9,
+        "rpg": 3.6,
+        "apg": 7.6
+      },
+      {
+        "name": "Donovan Atwell",
+        "ppg": 13.5,
+        "rpg": 3.3,
+        "apg": 0.8
+      }
+    ],
+    "starting5Height": 76.8,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "Arizona Wildcats",
+          "rank": 1,
+          "score": "78-75"
+        },
+        {
+          "opponent": "Duke Blue Devils",
+          "rank": 3,
+          "score": "82-81"
+        },
+        {
+          "opponent": "Iowa State Cyclones",
+          "rank": 4,
+          "score": "82-73"
+        },
+        {
+          "opponent": "Houston Cougars",
+          "rank": 6,
+          "score": "90-86"
+        },
+        {
+          "opponent": "BYU Cougars",
+          "rank": 11,
+          "score": "84-71"
+        }
+      ]
+    }
+  },
+  "akron": {
+    "teamId": "akron",
+    "topPlayers": [
+      {
+        "name": "Tavari Johnson",
+        "ppg": 20.1,
+        "rpg": 3,
+        "apg": 5
+      },
+      {
+        "name": "Amani Lyles",
+        "ppg": 14.6,
+        "rpg": 8,
+        "apg": 2.2
+      },
+      {
+        "name": "Shammah Scott",
+        "ppg": 12.7,
+        "rpg": 2.6,
+        "apg": 2.9
+      }
+    ],
+    "starting5Height": 76,
+    "schedule": {
+      "last10": "10-0",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "Eastern Michigan Eagles",
+          "rank": 0,
+          "score": "66-64"
+        },
+        {
+          "opponent": "Buffalo Bulls",
+          "rank": 0,
+          "score": "73-70"
+        },
+        {
+          "opponent": "Toledo Rockets",
+          "rank": 0,
+          "score": "79-76"
+        },
+        {
+          "opponent": "Massachusetts Minutemen",
+          "rank": 0,
+          "score": "99-92"
+        },
+        {
+          "opponent": "Kent State Golden Flashes",
+          "rank": 0,
+          "score": "75-68"
+        }
+      ]
+    }
+  },
+  "alabama": {
+    "teamId": "alabama",
+    "topPlayers": [
+      {
+        "name": "Labaron Philon Jr.",
+        "ppg": 21.7,
+        "rpg": 3.2,
+        "apg": 4.7
+      },
+      {
+        "name": "Aden Holloway",
+        "ppg": 16.8,
+        "rpg": 2.8,
+        "apg": 3.8
+      },
+      {
+        "name": "Latrell Wrightsell",
+        "ppg": 12.8,
+        "rpg": 3.1,
+        "apg": 2
+      }
+    ],
+    "starting5Height": 77.2,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "St. John's Red Storm",
+          "rank": 5,
+          "score": "103-96"
+        },
+        {
+          "opponent": "Illinois Fighting Illini",
+          "rank": 8,
+          "score": "90-86"
+        },
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 20,
+          "score": "117-115"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 22,
+          "score": "71-69"
+        }
+      ]
+    }
+  },
+  "hofstra": {
+    "teamId": "hofstra",
+    "topPlayers": [
+      {
+        "name": "Cruz Davis",
+        "ppg": 20.2,
+        "rpg": 3.7,
+        "apg": 4.6
+      },
+      {
+        "name": "Preston Edmead",
+        "ppg": 15.9,
+        "rpg": 3.5,
+        "apg": 4.4
+      },
+      {
+        "name": "Biggie Patterson",
+        "ppg": 9.5,
+        "rpg": 5.6,
+        "apg": 0.4
+      }
+    ],
+    "starting5Height": 76.8,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Syracuse Orange",
+          "rank": 0,
+          "score": "70-69"
+        },
+        {
+          "opponent": "Drexel Dragons",
+          "rank": 0,
+          "score": "70-67"
+        },
+        {
+          "opponent": "Monmouth Hawks",
+          "rank": 0,
+          "score": "67-64"
+        },
+        {
+          "opponent": "Towson Tigers",
+          "rank": 0,
+          "score": "68-65"
+        },
+        {
+          "opponent": "Charleston Cougars",
+          "rank": 0,
+          "score": "66-62"
+        }
+      ]
+    }
+  },
+  "tennessee": {
+    "teamId": "tennessee",
+    "topPlayers": [
+      {
+        "name": "Ja'Kobi Gillespie",
+        "ppg": 18,
+        "rpg": 2.8,
+        "apg": 5.5
+      },
+      {
+        "name": "Nate Ament",
+        "ppg": 17.5,
+        "rpg": 6.6,
+        "apg": 2.5
+      },
+      {
+        "name": "J.P. Estrella",
+        "ppg": 10.1,
+        "rpg": 5.2,
+        "apg": 0.8
+      }
+    ],
+    "starting5Height": 80.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "Houston Cougars",
+          "rank": 3,
+          "score": "76-73"
+        },
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 11,
+          "score": "83-62"
+        },
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 17,
+          "score": "79-73"
+        },
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 19,
+          "score": "69-65"
+        }
+      ]
+    }
+  },
+  "miami-oh": {
+    "teamId": "miami-oh",
+    "topPlayers": [
+      {
+        "name": "Peter Suder",
+        "ppg": 14.6,
+        "rpg": 4.6,
+        "apg": 4
+      },
+      {
+        "name": "Brant Byers",
+        "ppg": 14.2,
+        "rpg": 4.1,
+        "apg": 0.6
+      },
+      {
+        "name": "Evan Ipsaro",
+        "ppg": 13.9,
+        "rpg": 2.4,
+        "apg": 3.3
+      }
+    ],
+    "starting5Height": 76.2,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Massachusetts Minutemen",
+          "rank": 0,
+          "score": "86-84"
+        },
+        {
+          "opponent": "Buffalo Bulls",
+          "rank": 0,
+          "score": "73-71"
+        },
+        {
+          "opponent": "Western Michigan Broncos",
+          "rank": 0,
+          "score": "69-67"
+        },
+        {
+          "opponent": "Toledo Rockets",
+          "rank": 0,
+          "score": "74-72"
+        },
+        {
+          "opponent": "Ohio Bobcats",
+          "rank": 0,
+          "score": "110-108"
+        }
+      ]
+    }
+  },
+  "virginia": {
+    "teamId": "virginia",
+    "topPlayers": [
+      {
+        "name": "Thijs De Ridder",
+        "ppg": 15.5,
+        "rpg": 6.2,
+        "apg": 1.6
+      },
+      {
+        "name": "Malik Thomas",
+        "ppg": 12.4,
+        "rpg": 3.9,
+        "apg": 1.6
+      },
+      {
+        "name": "Sam Lewis",
+        "ppg": 10.8,
+        "rpg": 3.6,
+        "apg": 1.4
+      }
+    ],
+    "starting5Height": 76.4,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 1,
+      "lossesVsTop25": 3,
+      "winsVsTop50": 1,
+      "lossesVsTop50": 3,
+      "bestWins": [
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 20,
+          "score": "79-70"
+        },
+        {
+          "opponent": "Notre Dame Fighting Irish",
+          "rank": 0,
+          "score": "100-97"
+        },
+        {
+          "opponent": "Florida State Seminoles",
+          "rank": 0,
+          "score": "61-58"
+        },
+        {
+          "opponent": "Miami Hurricanes",
+          "rank": 0,
+          "score": "86-83"
+        },
+        {
+          "opponent": "SMU Mustangs",
+          "rank": 0,
+          "score": "72-68"
+        }
+      ]
+    }
+  },
+  "wright-st": {
+    "teamId": "wright-st",
+    "topPlayers": [
+      {
+        "name": "Michael Cooper",
+        "ppg": 13.4,
+        "rpg": 2.8,
+        "apg": 2.2
+      },
+      {
+        "name": "TJ Burch",
+        "ppg": 12.3,
+        "rpg": 2.4,
+        "apg": 3.5
+      },
+      {
+        "name": "Michael Imariagbe",
+        "ppg": 11.8,
+        "rpg": 7,
+        "apg": 1.8
+      }
+    ],
+    "starting5Height": 76,
+    "schedule": {
+      "last10": "8-2",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Northern Kentucky Norse",
+          "rank": 0,
+          "score": "92-91"
+        },
+        {
+          "opponent": "Detroit Mercy Titans",
+          "rank": 0,
+          "score": "84-82"
+        },
+        {
+          "opponent": "Detroit Mercy Titans",
+          "rank": 0,
+          "score": "66-63"
+        },
+        {
+          "opponent": "IU Indianapolis Jaguars",
+          "rank": 0,
+          "score": "81-77"
+        },
+        {
+          "opponent": "Purdue Fort Wayne Mastodons",
+          "rank": 0,
+          "score": "74-70"
+        }
+      ]
+    }
+  },
+  "kentucky": {
+    "teamId": "kentucky",
+    "topPlayers": [
+      {
+        "name": "Otega Oweh",
+        "ppg": 18.2,
+        "rpg": 4.6,
+        "apg": 2.6
+      },
+      {
+        "name": "Denzel Aberdeen",
+        "ppg": 13.2,
+        "rpg": 2.6,
+        "apg": 3.6
+      },
+      {
+        "name": "Collin Chandler",
+        "ppg": 9.9,
+        "rpg": 2.8,
+        "apg": 2.2
+      }
+    ],
+    "starting5Height": 76.4,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 9,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 9,
+      "bestWins": [
+        {
+          "opponent": "Arkansas Razorbacks",
+          "rank": 15,
+          "score": "85-77"
+        },
+        {
+          "opponent": "St. John's Red Storm",
+          "rank": 22,
+          "score": "78-66"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 24,
+          "score": "80-78"
+        },
+        {
+          "opponent": "Tennessee Volunteers",
+          "rank": 25,
+          "score": "74-71"
+        },
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 25,
+          "score": "91-77"
+        }
+      ]
+    }
+  },
+  "santa-clara": {
+    "teamId": "santa-clara",
+    "topPlayers": [
+      {
+        "name": "Christian Hammond",
+        "ppg": 15.8,
+        "rpg": 2.9,
+        "apg": 2.4
+      },
+      {
+        "name": "Elijah Mahi",
+        "ppg": 13.9,
+        "rpg": 4.7,
+        "apg": 2.6
+      },
+      {
+        "name": "Allen Graves",
+        "ppg": 11.6,
+        "rpg": 6.5,
+        "apg": 1.8
+      }
+    ],
+    "starting5Height": 79.2,
+    "schedule": {
+      "last10": "7-3",
+      "winsVsTop25": 1,
+      "lossesVsTop25": 3,
+      "winsVsTop50": 1,
+      "lossesVsTop50": 3,
+      "bestWins": [
+        {
+          "opponent": "Saint Mary's Gaels",
+          "rank": 21,
+          "score": "76-71"
+        },
+        {
+          "opponent": "North Texas Mean Green",
+          "rank": 0,
+          "score": "63-60"
+        },
+        {
+          "opponent": "Washington State Cougars",
+          "rank": 0,
+          "score": "96-92"
+        },
+        {
+          "opponent": "Portland Pilots",
+          "rank": 0,
+          "score": "92-85"
+        },
+        {
+          "opponent": "Saint Mary's Gaels",
+          "rank": 0,
+          "score": "62-54"
+        }
+      ]
+    }
+  },
+  "iowa-st": {
+    "teamId": "iowa-st",
+    "topPlayers": [
+      {
+        "name": "Milan Momcilovic",
+        "ppg": 17.1,
+        "rpg": 3.1,
+        "apg": 0.9
+      },
+      {
+        "name": "Joshua Jefferson",
+        "ppg": 16.9,
+        "rpg": 7.6,
+        "apg": 4.9
+      },
+      {
+        "name": "Tamin Lipsey",
+        "ppg": 13.3,
+        "rpg": 4,
+        "apg": 5
+      }
+    ],
+    "starting5Height": 78.2,
+    "schedule": {
+      "last10": "6-4",
+      "winsVsTop25": 5,
+      "lossesVsTop25": 4,
+      "winsVsTop50": 5,
+      "lossesVsTop50": 4,
+      "bestWins": [
+        {
+          "opponent": "Purdue Boilermakers",
+          "rank": 1,
+          "score": "81-58"
+        },
+        {
+          "opponent": "Houston Cougars",
+          "rank": 2,
+          "score": "70-67"
+        },
+        {
+          "opponent": "Kansas Jayhawks",
+          "rank": 9,
+          "score": "74-56"
+        },
+        {
+          "opponent": "St. John's Red Storm",
+          "rank": 14,
+          "score": "83-82"
+        },
+        {
+          "opponent": "Texas Tech Red Raiders",
+          "rank": 16,
+          "score": "75-53"
+        }
+      ]
+    }
+  },
+  "tenn-st": {
+    "teamId": "tenn-st",
+    "topPlayers": [
+      {
+        "name": "Aaron Nkrumah",
+        "ppg": 17.6,
+        "rpg": 5.5,
+        "apg": 3
+      },
+      {
+        "name": "Travis Harper II",
+        "ppg": 17.3,
+        "rpg": 4.3,
+        "apg": 1.2
+      },
+      {
+        "name": "Dante Harris",
+        "ppg": 11.7,
+        "rpg": 3.7,
+        "apg": 4.5
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 1,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 1,
+      "bestWins": [
+        {
+          "opponent": "UNC Asheville Bulldogs",
+          "rank": 0,
+          "score": "75-73"
+        },
+        {
+          "opponent": "Southern Indiana Screaming Eagles",
+          "rank": 0,
+          "score": "73-71"
+        },
+        {
+          "opponent": "UNLV Rebels",
+          "rank": 0,
+          "score": "63-60"
+        },
+        {
+          "opponent": "Little Rock Trojans",
+          "rank": 0,
+          "score": "84-79"
+        },
+        {
+          "opponent": "Morehead State Eagles",
+          "rank": 0,
+          "score": "105-100"
+        }
+      ]
+    }
+  },
+  "texas": {
+    "teamId": "texas",
+    "topPlayers": [
+      {
+        "name": "Dailyn Swain",
+        "ppg": 17.7,
+        "rpg": 7.6,
+        "apg": 3.4
+      },
+      {
+        "name": "Matas Vokietaitis",
+        "ppg": 15.5,
+        "rpg": 6.9,
+        "apg": 0.6
+      },
+      {
+        "name": "Tramon Mark",
+        "ppg": 13.6,
+        "rpg": 3.5,
+        "apg": 1.9
+      }
+    ],
+    "starting5Height": 78.6,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 4,
+      "lossesVsTop25": 5,
+      "winsVsTop50": 4,
+      "lossesVsTop50": 5,
+      "bestWins": [
+        {
+          "opponent": "Vanderbilt Commodores",
+          "rank": 10,
+          "score": "80-64"
+        },
+        {
+          "opponent": "Alabama Crimson Tide",
+          "rank": 13,
+          "score": "92-88"
+        },
+        {
+          "opponent": "Georgia Bulldogs",
+          "rank": 21,
+          "score": "87-67"
+        },
+        {
+          "opponent": "NC State Wolfpack",
+          "rank": 23,
+          "score": "102-97"
+        }
+      ]
+    }
+  },
+  "prairie-view": {
+    "teamId": "prairie-view",
+    "topPlayers": [
+      {
+        "name": "Dontae Horne",
+        "ppg": 20.2,
+        "rpg": 4.5,
+        "apg": 3.1
+      },
+      {
+        "name": "Tai'Reon Joseph",
+        "ppg": 18.2,
+        "rpg": 2.4,
+        "apg": 1
+      },
+      {
+        "name": "Cory Wells",
+        "ppg": 13.1,
+        "rpg": 7.1,
+        "apg": 2.2
+      }
+    ],
+    "starting5Height": 75,
+    "schedule": {
+      "last10": "9-1",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Mississippi Valley State Delta Devils",
+          "rank": 0,
+          "score": "70-69"
+        },
+        {
+          "opponent": "North Florida Ospreys",
+          "rank": 0,
+          "score": "85-82"
+        },
+        {
+          "opponent": "Southern Jaguars",
+          "rank": 0,
+          "score": "89-85"
+        },
+        {
+          "opponent": "Bethune-Cookman Wildcats",
+          "rank": 0,
+          "score": "71-67"
+        },
+        {
+          "opponent": "Grambling Tigers",
+          "rank": 0,
+          "score": "68-63"
+        }
+      ]
+    }
+  },
+  "umbc": {
+    "teamId": "umbc",
+    "topPlayers": [
+      {
+        "name": "Tijan Saine Jr.",
+        "ppg": 17.5,
+        "rpg": 2.3,
+        "apg": 4.3
+      },
+      {
+        "name": "Viljami Vartiainen",
+        "ppg": 12.8,
+        "rpg": 3.2,
+        "apg": 1
+      },
+      {
+        "name": "Jace Whiting",
+        "ppg": 11.2,
+        "rpg": 3.5,
+        "apg": 2.7
+      }
+    ],
+    "starting5Height": 75.6,
+    "schedule": {
+      "last10": "5-5",
+      "winsVsTop25": 0,
+      "lossesVsTop25": 0,
+      "winsVsTop50": 0,
+      "lossesVsTop50": 0,
+      "bestWins": [
+        {
+          "opponent": "Idaho State Bengals",
+          "rank": 0,
+          "score": "81-79"
+        },
+        {
+          "opponent": "Montana State Bobcats",
+          "rank": 0,
+          "score": "82-79"
+        },
+        {
+          "opponent": "Kansas City Roos",
+          "rank": 0,
+          "score": "64-60"
+        },
+        {
+          "opponent": "Northern Colorado Bears",
+          "rank": 0,
+          "score": "76-71"
+        },
+        {
+          "opponent": "Campbell Fighting Camels",
+          "rank": 0,
+          "score": "91-85"
+        }
+      ]
+    }
+  },
+  "smu": {
+    "teamId": "smu",
+    "topPlayers": [
+      {
+        "name": "Boopie Miller",
+        "ppg": 19.2,
+        "rpg": 3.9,
+        "apg": 6.4
+      },
+      {
+        "name": "Jaron Pierre Jr.",
+        "ppg": 17.6,
+        "rpg": 4.9,
+        "apg": 2
+      },
+      {
+        "name": "B.J. Edwards",
+        "ppg": 12.7,
+        "rpg": 5.9,
+        "apg": 4.9
+      }
+    ],
+    "starting5Height": 77.6,
+    "schedule": {
+      "last10": "4-6",
+      "winsVsTop25": 2,
+      "lossesVsTop25": 6,
+      "winsVsTop50": 2,
+      "lossesVsTop50": 6,
+      "bestWins": [
+        {
+          "opponent": "North Carolina Tar Heels",
+          "rank": 12,
+          "score": "97-83"
+        },
+        {
+          "opponent": "Louisville Cardinals",
+          "rank": 21,
+          "score": "95-85"
+        },
+        {
+          "opponent": "Virginia Tech Hokies",
+          "rank": 0,
+          "score": "77-76"
+        },
+        {
+          "opponent": "Butler Bulldogs",
+          "rank": 0,
+          "score": "87-85"
+        },
+        {
+          "opponent": "Florida State Seminoles",
+          "rank": 0,
+          "score": "83-80"
+        }
+      ]
+    }
+  }
+}

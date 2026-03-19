@@ -1,12 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// Server-side API key from environment (Vercel). Never sent to the browser.
+const SERVER_OPENAI_KEY = process.env.OPENAI_API_KEY || "";
+const SERVER_PROVIDER = "openai";
+const SERVER_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+
 export async function POST(req: NextRequest) {
-  const { provider, apiKey, model, systemPrompt, userPrompt } =
-    await req.json();
+  const body = await req.json();
+  const { systemPrompt } = body;
+
+  // Support both single-prompt (legacy) and multi-turn messages
+  const messages: { role: string; content: string }[] = body.messages
+    ? body.messages
+    : [{ role: "user", content: body.userPrompt }];
+
+  // Use server key if available, fall back to client-provided key
+  const apiKey = SERVER_OPENAI_KEY || body.apiKey;
+  const provider = SERVER_OPENAI_KEY ? SERVER_PROVIDER : body.provider;
+  const model = SERVER_OPENAI_KEY ? SERVER_MODEL : body.model;
 
   if (!apiKey) {
     return NextResponse.json(
-      { error: "No API key configured. Go to Settings to add one." },
+      { error: "AI is not configured. Please try again later." },
       { status: 400 }
     );
   }
@@ -23,16 +38,16 @@ export async function POST(req: NextRequest) {
           model,
           messages: [
             { role: "system", content: systemPrompt },
-            { role: "user", content: userPrompt },
+            ...messages,
           ],
-          max_tokens: 1024,
+          max_completion_tokens: 1024,
           temperature: 0.7,
         }),
       });
 
       if (!res.ok) {
         const err = await res.text();
-        // Sanitize: never echo back anything that might contain the key
+        // Never leak API keys in error messages
         const safeErr = err.replace(/sk-[a-zA-Z0-9_-]+/g, "sk-***");
         return NextResponse.json(
           { error: `OpenAI API error (${res.status}): ${safeErr}` },
@@ -57,7 +72,7 @@ export async function POST(req: NextRequest) {
         body: JSON.stringify({
           model,
           system: systemPrompt,
-          messages: [{ role: "user", content: userPrompt }],
+          messages,
           max_tokens: 1024,
           temperature: 0.7,
         }),
@@ -83,7 +98,6 @@ export async function POST(req: NextRequest) {
       { status: 400 }
     );
   } catch (e) {
-    // Never include raw error details that might leak the key
     const message =
       e instanceof Error ? e.message : "An unexpected error occurred";
     const safeMessage = message.replace(/sk-[a-zA-Z0-9_-]+/g, "sk-***");
