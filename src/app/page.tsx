@@ -105,7 +105,7 @@ export default function Home() {
         alert(`You've used all ${AI_LIMITS.aiPicks} AI picks for this visit.`);
         return;
       }
-      recordAIPick();
+      // Usage is recorded inside useChat.sendMessage to avoid double-counting
       let topTeam: Team | null = null;
       let bottomTeam: Team | null = null;
       let round = 1;

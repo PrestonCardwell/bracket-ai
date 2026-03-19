@@ -50,13 +50,13 @@ export default function Matchup({
           }
         />
       </div>
-      {/* Action buttons — vertical stack to fit in the narrow connector gap */}
+      {/* Action buttons — compact vertical stack */}
       {canInteract && (onCompare || (showAI && onAIAction)) && (
-        <div className="absolute -right-0.5 top-1/2 -translate-y-1/2 translate-x-full flex flex-col gap-0.5 z-10">
+        <div className="absolute -right-0.5 top-1/2 -translate-y-1/2 translate-x-full flex flex-col gap-px z-10">
           {onCompare && topTeam && bottomTeam && (
             <button
               onClick={() => onCompare(topTeam, bottomTeam)}
-              className="w-5 h-5 rounded bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
+              className="w-[18px] h-[15px] rounded-sm bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
               title="Compare Stats"
             >
               <svg width="8" height="8" viewBox="0 0 12 12" fill="currentColor">
@@ -70,14 +70,14 @@ export default function Matchup({
             <>
               <button
                 onClick={() => onAIAction(gameId, "pick")}
-                className="w-5 h-5 rounded bg-violet-600 hover:bg-violet-500 text-white text-[8px] font-bold flex items-center justify-center"
+                className="w-[18px] h-[15px] rounded-sm bg-violet-600 hover:bg-violet-500 text-white text-[7px] font-bold flex items-center justify-center"
                 title="AI Pick"
               >
                 AI
               </button>
               <button
                 onClick={() => onAIAction(gameId, "insights")}
-                className="w-5 h-5 rounded bg-violet-600/60 hover:bg-violet-500 text-white text-[8px] flex items-center justify-center"
+                className="w-[18px] h-[15px] rounded-sm bg-violet-600/60 hover:bg-violet-500 text-white text-[7px] flex items-center justify-center"
                 title="AI Insights"
               >
                 ?
