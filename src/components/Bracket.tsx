@@ -58,10 +58,11 @@ export default function Bracket({
               {tab.label}
             </button>
           ))}
-          <div className="ml-auto text-sm text-slate-400 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 whitespace-nowrap shrink-0">
-            {picksCount}<span className="text-slate-600">/67</span> picks
+          <div className="ml-auto text-xs sm:text-sm text-slate-400 bg-slate-800 px-2 sm:px-3 py-1.5 rounded-lg border border-slate-700 whitespace-nowrap shrink-0">
+            {picksCount}<span className="text-slate-600">/67</span>
+            <span className="hidden sm:inline"> picks</span>
             <span className="text-slate-500 ml-1.5">·</span>
-            <span className="text-slate-400 ml-1.5">{aiPicksRemaining} AI left</span>
+            <span className="text-slate-400 ml-1.5">{aiPicksRemaining} AI</span>
           </div>
         </div>
       </div>
