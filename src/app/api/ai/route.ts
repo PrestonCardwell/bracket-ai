@@ -7,7 +7,7 @@ const SERVER_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { systemPrompt } = body;
+  const { systemPrompt, structured } = body;
 
   // Support both single-prompt (legacy) and multi-turn messages
   const messages: { role: string; content: string }[] = body.messages
@@ -28,21 +28,59 @@ export async function POST(req: NextRequest) {
 
   try {
     if (provider === "openai") {
+      // Build the request body
+      const openaiBody: Record<string, unknown> = {
+        model,
+        messages: [
+          { role: "system", content: systemPrompt },
+          ...messages,
+        ],
+        max_completion_tokens: 1024,
+        temperature: 0.7,
+      };
+
+      // For pick requests, use structured output to guarantee JSON fields
+      if (structured) {
+        openaiBody.response_format = {
+          type: "json_schema",
+          json_schema: {
+            name: "pick_response",
+            strict: true,
+            schema: {
+              type: "object",
+              properties: {
+                matchup_title: { type: "string", description: "e.g. Team A vs Team B" },
+                bullets: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      label: { type: "string", description: "e.g. Efficiency, Scoring, Defense" },
+                      text: { type: "string", description: "Head-to-head comparison for this category" },
+                    },
+                    required: ["label", "text"],
+                    additionalProperties: false,
+                  },
+                },
+                pick: { type: "string", description: "The team name you are picking to win" },
+                reasoning: { type: "string", description: "1-2 sentences explaining WHY you picked this team, connecting to the analysis above" },
+              },
+              required: ["matchup_title", "bullets", "pick", "reasoning"],
+              additionalProperties: false,
+            },
+          },
+        };
+        // Structured output doesn't support temperature on some models
+        delete openaiBody.temperature;
+      }
+
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${apiKey}`,
         },
-        body: JSON.stringify({
-          model,
-          messages: [
-            { role: "system", content: systemPrompt },
-            ...messages,
-          ],
-          max_completion_tokens: 1024,
-          temperature: 0.7,
-        }),
+        body: JSON.stringify(openaiBody),
       });
 
       if (!res.ok) {
@@ -56,9 +94,24 @@ export async function POST(req: NextRequest) {
       }
 
       const data = await res.json();
-      return NextResponse.json({
-        content: data.choices[0].message.content,
-      });
+      const rawContent = data.choices[0].message.content;
+
+      // For structured output, parse and return the JSON alongside text
+      if (structured) {
+        try {
+          const parsed = JSON.parse(rawContent);
+          return NextResponse.json({
+            content: rawContent,
+            structured: true,
+            structuredData: parsed,
+          });
+        } catch {
+          // Fallback: return as plain text if JSON parsing fails
+          return NextResponse.json({ content: rawContent });
+        }
+      }
+
+      return NextResponse.json({ content: rawContent });
     }
 
     if (provider === "anthropic") {

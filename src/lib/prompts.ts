@@ -92,23 +92,17 @@ vs.
 
 ${teamProfile(bottomTeam)}
 
-Format your response EXACTLY like this:
+Respond with a JSON object matching the required schema. Your response must include:
+- "matchup_title": "[Team A] vs [Team B]"
+- "bullets": an array of 5-6 objects, each with "label" (e.g. "Efficiency", "Scoring", "Defense", "Rebounding", "Momentum", "X-factor") and "text" (head-to-head comparison for that category)
+- "pick": the full team name you are picking to win
+- "reasoning": 1-2 sentences explaining WHY you picked this team. If your pick goes against what most of the stats suggest, you MUST explain what tips the balance.
 
-**[Team A] vs [Team B]**
-- Efficiency: [who has the edge and by how much]
-- Scoring: [compare points per game, shooting percentages]
-- Defense: [compare defensive efficiency, blocks, steals]
-- Rebounding: [compare boards, especially offensive rebounds]
-- Momentum: [compare recent form, streaks, quality wins]
-- X-factor: [star player matchup, size mismatch, tempo clash, or whatever matters most]
-
-**Pick: [Team Name]** because [1-2 sentences explaining WHY. If your pick goes against what the stats suggest, you MUST explain what tips the balance. Example: "Pick: Clemson because their defensive pressure and guard play can neutralize Florida's size advantage in a one-game setting, and their 8-2 run gives them real momentum."]
-
-Rules:
-- Compare the teams HEAD TO HEAD on each bullet. Don't give separate sections per team.
+Rules for the bullet text:
+- Compare the teams HEAD TO HEAD. Don't give separate sections per team.
 - Use plain English and actual numbers. Say "scores 78 points per game" not "78 PPG."
-- Keep the whole response compact.
-- The "because" explanation after Pick is MANDATORY. Never write just "Pick: [Team]" alone.`;
+- Keep each bullet to 1-2 sentences.
+- Write like a knowledgeable basketball fan, casual and clear.`;
 }
 
 export function buildInsightsPrompt(

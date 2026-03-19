@@ -105,6 +105,9 @@ export function useChat(bracketData: BracketData, picks: Picks) {
         picksRef.current
       );
 
+      // Use structured output for pick requests
+      const isPickRequest = !!gameId;
+
       try {
         const res = await fetch("/api/ai", {
           method: "POST",
@@ -115,6 +118,7 @@ export function useChat(bracketData: BracketData, picks: Picks) {
             model: settings?.model || "",
             systemPrompt,
             messages: apiMessages,
+            structured: isPickRequest,
           }),
         });
 
@@ -131,26 +135,35 @@ export function useChat(bracketData: BracketData, picks: Picks) {
           role: "assistant",
           content: data.content,
           timestamp: Date.now(),
+          structuredPick: data.structured ? data.structuredData : undefined,
         };
 
         setMessages((prev) => [...prev, assistantMsg]);
         setLoading(false);
 
-        // If this was a pick request, extract the team name from the response
+        // If this was a pick request, extract the team name
         if (gameId) {
-          // Match "Pick: Team Name" with optional ** wrapping and trailing text
-          const pickMatch = data.content.match(/(?:PICK|Pick):\s*\*{0,2}([^*\n]+)/i);
-          if (pickMatch) {
-            const teamName = pickMatch[1]
-              .replace(/\*+/g, "")
-              .replace(/\s+because\s.*/i, "") // strip "because" explanation
-              .replace(/\s*[-–—].*/, "")   // strip after dashes
-              .replace(/\.\s.*/, "")         // strip after ". " (sentence boundary)
-              .replace(/[.,!]+$/, "")        // strip trailing punctuation
-              .trim();
-            if (teamName) {
-              setLastPickResult({ gameId, teamName });
+          let teamName = "";
+
+          // Prefer structured data (guaranteed field)
+          if (data.structured && data.structuredData?.pick) {
+            teamName = data.structuredData.pick.replace(/[.,!]+$/, "").trim();
+          } else {
+            // Fallback: regex extraction for non-structured responses
+            const pickMatch = data.content.match(/(?:PICK|Pick):\s*\*{0,2}([^*\n]+)/i);
+            if (pickMatch) {
+              teamName = pickMatch[1]
+                .replace(/\*+/g, "")
+                .replace(/\s+because\s.*/i, "")
+                .replace(/\s*[-–—].*/, "")
+                .replace(/\.\s.*/, "")
+                .replace(/[.,!]+$/, "")
+                .trim();
             }
+          }
+
+          if (teamName) {
+            setLastPickResult({ gameId, teamName });
           }
           setPendingPickGameId(null);
         }

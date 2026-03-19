@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, type KeyboardEvent } from "react";
-import { ChatMessage } from "@/lib/types";
+import { ChatMessage, StructuredPick } from "@/lib/types";
 
 interface ChatPanelProps {
   isOpen: boolean;
@@ -44,6 +44,32 @@ function renderInline(text: string) {
   );
 }
 
+function StructuredPickView({ data }: { data: StructuredPick }) {
+  return (
+    <div className="space-y-1">
+      <h4 className="text-emerald-400 font-semibold text-sm">
+        {data.matchup_title}
+      </h4>
+      {data.bullets.map((b, i) => (
+        <p key={i} className="text-slate-300 text-sm pl-3 leading-snug">
+          <span className="text-slate-500 mr-1.5">&bull;</span>
+          <span className="text-white font-medium">{b.label}:</span> {b.text}
+        </p>
+      ))}
+      <div className="bg-emerald-900/40 border border-emerald-600 rounded px-2.5 py-1.5 my-1.5">
+        <div className="text-emerald-200 font-bold text-sm">
+          Pick: {data.pick}
+        </div>
+        {data.reasoning && (
+          <p className="text-emerald-300/80 text-xs mt-1 leading-snug font-normal">
+            {data.reasoning}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function MessageBubble({ message }: { message: ChatMessage }) {
   const isUser = message.role === "user";
 
@@ -58,6 +84,8 @@ function MessageBubble({ message }: { message: ChatMessage }) {
       >
         {isUser ? (
           <p className="whitespace-pre-wrap">{message.content}</p>
+        ) : message.structuredPick ? (
+          <StructuredPickView data={message.structuredPick} />
         ) : (
           <div className="space-y-1">
             {(() => {

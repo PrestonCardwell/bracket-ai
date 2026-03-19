@@ -114,10 +114,19 @@ export interface AIResponse {
   pickTeamId?: string;
 }
 
+// Structured pick response from AI
+export interface StructuredPick {
+  matchup_title: string;
+  bullets: { label: string; text: string }[];
+  pick: string;
+  reasoning: string;
+}
+
 // Chat
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: number;
+  structuredPick?: StructuredPick;
 }
