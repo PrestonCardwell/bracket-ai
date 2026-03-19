@@ -36,6 +36,7 @@ export default function Home() {
   const [compareTeams, setCompareTeams] = useState<{
     teamA: Team;
     teamB: Team;
+    gameId?: string;
   } | null>(null);
   const [showFillMenu, setShowFillMenu] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
@@ -416,6 +417,29 @@ export default function Home() {
           teamA={compareTeams.teamA}
           teamB={compareTeams.teamB}
           onClose={() => setCompareTeams(null)}
+          onAIAction={(action) => {
+            // Find the gameId for this matchup and trigger AI
+            const teamA = compareTeams.teamA;
+            const teamB = compareTeams.teamB;
+            // Search all possible gameIds to find the one with these two teams
+            const regionNames: RegionName[] = ["east", "west", "south", "midwest"];
+            for (const rn of regionNames) {
+              const region = bracketData.regions[rn];
+              for (let round = 1; round <= 4; round++) {
+                const gamesPerRegion = 8 / Math.pow(2, round - 1);
+                for (let g = 0; g < gamesPerRegion; g++) {
+                  const gid = `${rn}-r${round}-g${g}`;
+                  const top = getTopTeam(region, round, g, picks, bracketData.firstFour);
+                  const bot = getBottomTeam(region, round, g, picks, bracketData.firstFour);
+                  if ((top?.id === teamA.id && bot?.id === teamB.id) ||
+                      (top?.id === teamB.id && bot?.id === teamA.id)) {
+                    handleAIAction(gid, action);
+                    return;
+                  }
+                }
+              }
+            }
+          }}
         />
       )}
 

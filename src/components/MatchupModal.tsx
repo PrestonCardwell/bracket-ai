@@ -7,6 +7,7 @@ interface MatchupModalProps {
   teamA: Team;
   teamB: Team;
   onClose: () => void;
+  onAIAction?: (action: "pick" | "insights") => void;
 }
 
 // ── Helpers ──
@@ -409,6 +410,7 @@ export default function MatchupModal({
   teamA,
   teamB,
   onClose,
+  onAIAction,
 }: MatchupModalProps) {
   // Escape key closes modal
   useEffect(() => {
@@ -503,6 +505,26 @@ export default function MatchupModal({
           <div className="mt-3">
             <EdgeSummary teamA={teamA} teamB={teamB} />
           </div>
+
+          {/* AI actions — mobile only (desktop has hover buttons on the bracket) */}
+          {onAIAction && (
+            <div className="flex gap-2 mt-3 sm:hidden">
+              <button
+                onClick={() => { onAIAction("pick"); onClose(); }}
+                className="flex-1 py-2 bg-violet-600 hover:bg-violet-500 text-white text-xs font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5"
+              >
+                <span className="bg-white/20 text-[9px] font-bold px-1 rounded">AI</span>
+                AI Pick
+              </button>
+              <button
+                onClick={() => { onAIAction("insights"); onClose(); }}
+                className="flex-1 py-2 bg-violet-600/60 hover:bg-violet-500 text-white text-xs font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5"
+              >
+                <span className="text-[10px]">?</span>
+                Matchup Insights
+              </button>
+            </div>
+          )}
         </div>
 
         {/* ── Scrollable Stats ── */}
