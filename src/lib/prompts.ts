@@ -101,12 +101,14 @@ Format your response EXACTLY like this — head-to-head comparison first, then y
 - Momentum: [compare recent form, streaks, quality wins]
 - X-factor: [star player matchup, size mismatch, tempo clash, or whatever matters most here]
 
-**Pick: [Team Name]** — [One sentence explaining why, tying the comparison together]
+**Pick: [Team Name]**
+[2-3 sentences explaining WHY you're making this pick. If the stats favor one team but you're picking the other, explain what tips the balance. Connect your pick to the specific matchup factors above. Example: "Even though Florida has the edge in size and rebounding, Clemson's defensive pressure and hot shooting stretch can neutralize that in a single-game setting. Their tempo control and guard play give them a real path to the upset here."]
 
 Rules:
 - Compare the teams HEAD TO HEAD on each bullet. Don't give separate sections per team.
 - Use plain English and actual numbers. Say "scores 78 points per game" not "78 PPG."
-- Keep the whole response compact. No more than 10 lines total.`;
+- Keep the whole response compact. No more than 12 lines total.
+- The pick explanation MUST connect to the bullet points above. If the bullets seem to favor one team but you pick the other, the explanation MUST address why you're going against what the stats suggest.`;
 }
 
 export function buildInsightsPrompt(
