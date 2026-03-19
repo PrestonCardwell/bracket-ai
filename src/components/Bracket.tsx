@@ -12,7 +12,7 @@ interface BracketProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
   aiPicksRemaining?: number;
 }
 
@@ -102,7 +102,7 @@ export default function Bracket({
       </div>
 
       {/* Active region */}
-      <div className="overflow-x-auto pb-4" style={{ overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }}>
+      <div className="sm:overflow-x-auto pb-4 overflow-visible">
         {activeTab === "final-four" ? (
           <FinalFour
             data={data}

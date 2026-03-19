@@ -9,7 +9,7 @@ interface RegionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
   firstFour: FirstFourGame[];
 }
 
@@ -33,7 +33,7 @@ interface BracketSectionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
   firstFour: FirstFourGame[];
 }
 
@@ -110,7 +110,7 @@ interface PlayInSectionProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
 }
 
 function PlayInSection({ games, picks, onPick, onAIAction, onCompare }: PlayInSectionProps) {

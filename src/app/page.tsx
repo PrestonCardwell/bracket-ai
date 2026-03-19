@@ -219,8 +219,8 @@ export default function Home() {
     chat.clearPickResult();
   }, [chat.lastPickResult, handlePick, chat]);
 
-  const handleCompare = useCallback((teamA: Team, teamB: Team) => {
-    setCompareTeams({ teamA, teamB });
+  const handleCompare = useCallback((teamA: Team, teamB: Team, gameId?: string) => {
+    setCompareTeams({ teamA, teamB, gameId });
   }, []);
 
   const handleCopyLink = useCallback(() => {
@@ -427,10 +427,14 @@ export default function Home() {
           teamB={compareTeams.teamB}
           onClose={() => setCompareTeams(null)}
           onAIAction={(action) => {
-            // Find the gameId for this matchup and trigger AI
+            // Use stored gameId if available (set when opening modal)
+            if (compareTeams.gameId) {
+              handleAIAction(compareTeams.gameId, action);
+              return;
+            }
+            // Fallback: search all possible gameIds to find the one with these two teams
             const teamA = compareTeams.teamA;
             const teamB = compareTeams.teamB;
-            // Search all possible gameIds to find the one with these two teams
             const regionNames: RegionName[] = ["east", "west", "south", "midwest"];
             for (const rn of regionNames) {
               const region = bracketData.regions[rn];

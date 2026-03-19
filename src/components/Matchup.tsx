@@ -10,7 +10,7 @@ interface MatchupProps {
   winnerId: string | null;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
   showAI?: boolean;
 }
 
@@ -55,7 +55,7 @@ export default function Matchup({
         <div className="absolute -right-0.5 top-1/2 -translate-y-1/2 translate-x-full flex gap-1 z-10">
           {onCompare && topTeam && bottomTeam && (
             <button
-              onClick={() => onCompare(topTeam, bottomTeam)}
+              onClick={() => onCompare(topTeam, bottomTeam, gameId)}
               className="w-6 h-6 rounded bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
               title="Compare Stats"
             >

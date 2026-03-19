@@ -9,7 +9,7 @@ interface FinalFourProps {
   picks: Picks;
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
-  onCompare?: (teamA: Team, teamB: Team) => void;
+  onCompare?: (teamA: Team, teamB: Team, gameId?: string) => void;
 }
 
 function getRegionChampion(
