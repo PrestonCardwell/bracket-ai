@@ -60,6 +60,8 @@ export default function Bracket({
           ))}
           <div className="ml-auto text-sm text-slate-400 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 whitespace-nowrap shrink-0">
             {picksCount}<span className="text-slate-600">/67</span> picks
+            <span className="text-slate-500 ml-1.5">·</span>
+            <span className="text-slate-400 ml-1.5">{aiPicksRemaining} AI left</span>
           </div>
         </div>
       </div>
@@ -83,9 +85,6 @@ export default function Bracket({
         <span className="hidden sm:flex items-center gap-1.5">
           <span className="w-4 h-4 rounded bg-violet-600/60 text-white text-[9px] flex items-center justify-center">?</span>
           Matchup insights
-        </span>
-        <span className="ml-auto text-slate-600 hidden sm:inline">
-          {aiPicksRemaining} AI picks left
         </span>
       </div>
 
