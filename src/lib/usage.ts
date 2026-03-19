@@ -9,7 +9,7 @@ interface UsageData {
 }
 
 const LIMITS = {
-  aiPicks: 67,
+  aiPicks: 63,
   aiFills: 1,
 };
 

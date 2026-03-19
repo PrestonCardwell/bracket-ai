@@ -782,6 +782,7 @@ const firstFour: FirstFourGame[] = [
     id: "first4-midwest-9",
     region: "midwest",
     slotIndex: 9,
+    winner: "teamA", // Miami OH defeated SMU
     teamA: midwest[9],
     teamB:
     { id: "smu", name: "SMU Mustangs", shortName: "SMU", seed: 11, conference: "ACC", record: "20-13",
