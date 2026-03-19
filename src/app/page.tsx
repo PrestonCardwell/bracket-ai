@@ -396,6 +396,7 @@ export default function Home() {
         onPick={handlePick}
         onAIAction={handleAIAction}
         onCompare={handleCompare}
+        aiPicksRemaining={getAIPicksRemaining()}
       />
 
       {/* Chat Panel */}

@@ -13,6 +13,7 @@ interface BracketProps {
   onPick: (gameId: string, teamId: string) => void;
   onAIAction?: (gameId: string, action: "pick" | "insights") => void;
   onCompare?: (teamA: Team, teamB: Team) => void;
+  aiPicksRemaining?: number;
 }
 
 const TABS: { id: Tab; label: string }[] = [
@@ -29,6 +30,7 @@ export default function Bracket({
   onPick,
   onAIAction,
   onCompare,
+  aiPicksRemaining = 67,
 }: BracketProps) {
   const [activeTab, setActiveTab] = useState<Tab>("east");
 
@@ -62,7 +64,7 @@ export default function Bracket({
         </div>
       </div>
 
-      {/* Legend */}
+      {/* Legend + AI usage */}
       <div className="flex items-center gap-4 mb-3 px-1 text-[11px] text-slate-500">
         <span className="flex items-center gap-1.5">
           <span className="w-4 h-4 rounded bg-slate-600 text-white flex items-center justify-center">
@@ -81,6 +83,9 @@ export default function Bracket({
         <span className="hidden sm:flex items-center gap-1.5">
           <span className="w-4 h-4 rounded bg-violet-600/60 text-white text-[9px] flex items-center justify-center">?</span>
           Matchup insights
+        </span>
+        <span className="ml-auto text-slate-600 hidden sm:inline">
+          {aiPicksRemaining} AI picks left
         </span>
       </div>
 
