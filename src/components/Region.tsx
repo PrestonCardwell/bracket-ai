@@ -15,7 +15,7 @@ interface RegionProps {
 
 function Connector() {
   return (
-    <div className="flex flex-col w-5 shrink-0">
+    <div className="flex flex-col w-10 shrink-0">
       <div className="flex-1 border-t-2 border-r-2 border-slate-600 rounded-tr-sm" />
       <div className="flex-1 border-b-2 border-r-2 border-slate-600 rounded-br-sm" />
     </div>
@@ -23,7 +23,7 @@ function Connector() {
 }
 
 function ConnectorLine() {
-  return <div className="w-4 border-t-2 border-slate-600 shrink-0 self-center" />;
+  return <div className="w-8 border-t-2 border-slate-600 shrink-0 self-center" />;
 }
 
 interface BracketSectionProps {

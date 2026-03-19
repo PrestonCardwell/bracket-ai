@@ -50,16 +50,16 @@ export default function Matchup({
           }
         />
       </div>
-      {/* Action buttons — compact vertical stack */}
+      {/* Action buttons */}
       {canInteract && (onCompare || (showAI && onAIAction)) && (
-        <div className="absolute -right-0.5 top-1/2 -translate-y-1/2 translate-x-full flex flex-col gap-px z-10">
+        <div className="absolute -right-0.5 top-1/2 -translate-y-1/2 translate-x-full flex flex-col gap-1 z-10">
           {onCompare && topTeam && bottomTeam && (
             <button
               onClick={() => onCompare(topTeam, bottomTeam)}
-              className="w-[18px] h-[15px] rounded-sm bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
+              className="w-6 h-5 rounded bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
               title="Compare Stats"
             >
-              <svg width="8" height="8" viewBox="0 0 12 12" fill="currentColor">
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor">
                 <rect x="1" y="5" width="3" height="6" rx="0.5" opacity="0.7" />
                 <rect x="5" y="2" width="3" height="9" rx="0.5" />
                 <rect x="9" y="4" width="3" height="7" rx="0.5" opacity="0.7" />
@@ -70,14 +70,14 @@ export default function Matchup({
             <>
               <button
                 onClick={() => onAIAction(gameId, "pick")}
-                className="w-[18px] h-[15px] rounded-sm bg-violet-600 hover:bg-violet-500 text-white text-[7px] font-bold flex items-center justify-center"
+                className="w-6 h-5 rounded bg-violet-600 hover:bg-violet-500 text-white text-[9px] font-bold flex items-center justify-center"
                 title="AI Pick"
               >
                 AI
               </button>
               <button
                 onClick={() => onAIAction(gameId, "insights")}
-                className="w-[18px] h-[15px] rounded-sm bg-violet-600/60 hover:bg-violet-500 text-white text-[7px] flex items-center justify-center"
+                className="w-6 h-5 rounded bg-violet-600/60 hover:bg-violet-500 text-white text-[9px] flex items-center justify-center"
                 title="AI Insights"
               >
                 ?
