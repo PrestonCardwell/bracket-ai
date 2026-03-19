@@ -102,6 +102,7 @@ export default function Home() {
 
   const handleAIAction = useCallback(
     (gameId: string, action: "pick" | "insights") => {
+      console.log("[AI Action]", { gameId, action, picks: Object.keys(picks).length });
       if (!canUseAIPick()) {
         alert(`You've used all ${AI_LIMITS.aiPicks} AI picks for this visit.`);
         return;
@@ -165,6 +166,11 @@ export default function Home() {
         );
       }
 
+      console.log("[AI Action] Teams resolved:", {
+        topTeam: topTeam?.name || "NULL",
+        bottomTeam: bottomTeam?.name || "NULL",
+        round
+      });
       if (!topTeam || !bottomTeam) {
         alert("Both teams need to be determined before AI can analyze this matchup. Fill out the earlier rounds first.");
         return;

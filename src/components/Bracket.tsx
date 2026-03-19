@@ -102,7 +102,7 @@ export default function Bracket({
       </div>
 
       {/* Active region */}
-      <div className="overflow-x-auto pb-4">
+      <div className="overflow-x-auto pb-4" style={{ overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }}>
         {activeTab === "final-four" ? (
           <FinalFour
             data={data}
