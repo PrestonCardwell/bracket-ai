@@ -71,18 +71,14 @@ export default function WelcomeModal({ forceOpen, onClose }: WelcomeModalProps) 
           <ul className="space-y-1.5 text-slate-300 text-xs">
             <li className="flex gap-2">
               <span className="text-slate-600 shrink-0">1.</span>
-              Click any team to pick them manually, or let AI help you decide.
+              Tap any team to pick them manually, or let AI help you decide.
             </li>
             <li className="flex gap-2">
               <span className="text-slate-600 shrink-0">2.</span>
-              The <span className="bg-emerald-600 text-white text-[9px] font-bold px-1 rounded mx-0.5">AI</span> button analyzes a matchup and picks a winner for you.
+              Tap the <span className="bg-slate-600 text-white text-[9px] px-1 rounded mx-0.5">•••</span> button next to any matchup to view stats, get an AI pick, or see insights.
             </li>
             <li className="flex gap-2">
               <span className="text-slate-600 shrink-0">3.</span>
-              The <span className="text-slate-400 font-medium">?</span> button gives you matchup insights without making a pick.
-            </li>
-            <li className="flex gap-2">
-              <span className="text-slate-600 shrink-0">4.</span>
               <span className="font-medium text-emerald-400">AI Fill Bracket</span> has AI analyze and pick every single game for you.
             </li>
           </ul>
