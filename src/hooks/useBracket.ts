@@ -24,20 +24,19 @@ function getLockedGameIds(): Set<string> {
   );
 }
 
-export function useBracket() {
-  const [picks, setPicks] = useState<Picks>({});
+function loadInitialPicks(): Picks {
+  if (typeof window === "undefined") return getLockedFirstFourPicks();
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const loaded = saved ? JSON.parse(saved) : {};
+    return { ...loaded, ...getLockedFirstFourPicks() };
+  } catch {
+    return getLockedFirstFourPicks();
+  }
+}
 
-  // Load picks from localStorage on mount, then apply locked First Four results
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      const loaded = saved ? JSON.parse(saved) : {};
-      // Always enforce locked First Four results
-      setPicks({ ...loaded, ...getLockedFirstFourPicks() });
-    } catch {
-      setPicks(getLockedFirstFourPicks());
-    }
-  }, []);
+export function useBracket() {
+  const [picks, setPicks] = useState<Picks>(loadInitialPicks);
 
   // Save picks to localStorage on change
   useEffect(() => {
