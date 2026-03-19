@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import { ChatMessage, Picks, BracketData } from "@/lib/types";
 import { buildChatSystemPrompt } from "@/lib/prompts";
 import { decryptValue, looksLikeRawKey } from "@/lib/crypto";
+import { canUseAIPick, recordAIPick } from "@/lib/usage";
 
 const STORAGE_KEY = "bracket-ai-chat";
 
@@ -66,6 +67,12 @@ export function useChat(bracketData: BracketData, picks: Picks) {
 
   const sendMessage = useCallback(
     async (content: string, gameId?: string, displayMessage?: string) => {
+      if (!canUseAIPick()) {
+        setError("You've used all your AI messages for this visit.");
+        return;
+      }
+      recordAIPick();
+
       // Try to get user settings; if none, the server-side key will be used
       const settings = await getSettings();
 
