@@ -102,7 +102,7 @@ export default function Bracket({
       </div>
 
       {/* Active region */}
-      <div className="sm:overflow-x-auto pb-4 overflow-visible">
+      <div className="overflow-x-auto pb-4">
         {activeTab === "final-four" ? (
           <FinalFour
             data={data}

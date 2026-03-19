@@ -114,30 +114,50 @@ interface PlayInSectionProps {
 }
 
 function PlayInSection({ games, picks, onPick, onAIAction, onCompare }: PlayInSectionProps) {
+  // Check if all games are locked (completed)
+  const allLocked = games.every((ff) => ff.winner);
+
   return (
     <div className="mb-4 p-3 bg-slate-800/40 rounded-lg border border-amber-900/30">
       <h3 className="text-[10px] uppercase tracking-widest text-amber-400 font-semibold mb-2">
         First Four — Play-in Games
       </h3>
-      <div className="flex gap-6">
-        {games.map((ff) => {
-          const seedLabel = ff.teamA.seed === 16 ? "16 Seed" : "11 Seed";
-          return (
-            <div key={ff.id}>
-              <div className="text-[10px] text-slate-500 mb-1">{seedLabel}</div>
-              <Matchup
-                gameId={ff.id}
-                topTeam={ff.teamA}
-                bottomTeam={ff.teamB}
-                winnerId={picks[ff.id] || null}
-                onPick={onPick}
-                onAIAction={onAIAction}
-                onCompare={onCompare}
-              />
-            </div>
-          );
-        })}
-      </div>
+      {allLocked ? (
+        // Compact display for completed games — no interactive matchup components
+        <div className="flex flex-wrap gap-3">
+          {games.map((ff) => {
+            const winner = ff.winner === "teamA" ? ff.teamA : ff.teamB;
+            const loser = ff.winner === "teamA" ? ff.teamB : ff.teamA;
+            return (
+              <div key={ff.id} className="text-xs text-slate-400">
+                <span className="text-emerald-400 font-medium">{winner.shortName}</span>
+                {" def. "}
+                <span className="text-slate-500">{loser.shortName}</span>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="flex flex-wrap gap-4 sm:gap-6">
+          {games.map((ff) => {
+            const seedLabel = ff.teamA.seed === 16 ? "16 Seed" : "11 Seed";
+            return (
+              <div key={ff.id}>
+                <div className="text-[10px] text-slate-500 mb-1">{seedLabel}</div>
+                <Matchup
+                  gameId={ff.id}
+                  topTeam={ff.teamA}
+                  bottomTeam={ff.teamB}
+                  winnerId={picks[ff.id] || null}
+                  onPick={onPick}
+                  onAIAction={onAIAction}
+                  onCompare={onCompare}
+                />
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
