@@ -69,7 +69,19 @@ export default function Bracket({
 
       {/* Legend + AI usage */}
       <div className="flex items-center gap-4 mb-3 px-1 text-[11px] text-slate-500">
-        <span className="flex items-center gap-1.5">
+        {/* Mobile legend */}
+        <span className="flex sm:hidden items-center gap-1.5">
+          <span className="w-4 h-4 rounded bg-slate-600 text-white flex items-center justify-center">
+            <svg width="8" height="8" viewBox="0 0 12 12" fill="currentColor">
+              <circle cx="2" cy="6" r="1.2" />
+              <circle cx="6" cy="6" r="1.2" />
+              <circle cx="10" cy="6" r="1.2" />
+            </svg>
+          </span>
+          Stats &amp; AI
+        </span>
+        {/* Desktop legend */}
+        <span className="hidden sm:flex items-center gap-1.5">
           <span className="w-4 h-4 rounded bg-slate-600 text-white flex items-center justify-center">
             <svg width="8" height="8" viewBox="0 0 12 12" fill="currentColor">
               <rect x="1" y="5" width="3" height="6" rx="0.5" opacity="0.7" />

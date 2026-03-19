@@ -59,10 +59,16 @@ export default function Matchup({
               className="w-6 h-6 rounded bg-slate-600 hover:bg-slate-500 text-white flex items-center justify-center transition-colors"
               title="Compare Stats"
             >
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor">
+              {/* Desktop: bar chart icon. Mobile: "more" dots since modal has everything */}
+              <svg className="hidden sm:block" width="10" height="10" viewBox="0 0 12 12" fill="currentColor">
                 <rect x="1" y="5" width="3" height="6" rx="0.5" opacity="0.7" />
                 <rect x="5" y="2" width="3" height="9" rx="0.5" />
                 <rect x="9" y="4" width="3" height="7" rx="0.5" opacity="0.7" />
+              </svg>
+              <svg className="sm:hidden" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <circle cx="2" cy="6" r="1.2" />
+                <circle cx="6" cy="6" r="1.2" />
+                <circle cx="10" cy="6" r="1.2" />
               </svg>
             </button>
           )}
