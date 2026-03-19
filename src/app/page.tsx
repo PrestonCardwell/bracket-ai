@@ -165,7 +165,10 @@ export default function Home() {
         );
       }
 
-      if (!topTeam || !bottomTeam) return;
+      if (!topTeam || !bottomTeam) {
+        alert("Both teams need to be determined before AI can analyze this matchup. Fill out the earlier rounds first.");
+        return;
+      }
 
       // Build data-rich prompt with full team stats, simulation context, and news
       const roundLabel = getRoundName(round);
