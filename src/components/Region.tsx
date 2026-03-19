@@ -68,7 +68,7 @@ function BracketSection({
 
   return (
     <div className="flex items-center">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         <BracketSection
           region={region}
           round={round - 1}
