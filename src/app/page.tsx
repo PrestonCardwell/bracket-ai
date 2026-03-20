@@ -215,6 +215,9 @@ export default function Home() {
     });
     if (team) {
       handlePick(gameId, team.id);
+      console.log("[Auto-pick] Applied:", team.name, "to", gameId);
+    } else {
+      console.warn("[Auto-pick] Could not match team:", teamName, "normalized:", normalizedPick);
     }
     chat.clearPickResult();
   }, [chat.lastPickResult, handlePick, chat]);

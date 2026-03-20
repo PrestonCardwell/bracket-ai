@@ -799,6 +799,31 @@ const firstFour: FirstFourGame[] = [
   }
 ];
 
+// Completed game results — locked and can't be changed by users
+// Thursday March 19, 2026 — Round of 64 (16 games)
+export const completedResults: Record<string, string> = {
+  // East Region
+  "east-r1-g0": "duke",       // (1) Duke 71, (16) Siena 65
+  "east-r1-g1": "tcu",        // (9) TCU 66, (8) Ohio State 64
+  "east-r1-g4": "louisville", // (6) Louisville 83, (11) South Florida 79
+  "east-r1-g5": "mich-st",    // (3) Michigan State 92, (14) North Dakota State 67
+  // West Region
+  "west-r1-g2": "high-point", // (12) High Point 83, (5) Wisconsin 82
+  "west-r1-g3": "arkansas",   // (4) Arkansas 97, (13) Hawai'i 78
+  "west-r1-g4": "texas",      // (11) Texas 79, (6) BYU 71
+  "west-r1-g5": "gonzaga",    // (3) Gonzaga 73, (14) Kennesaw State 64
+  // South Region
+  "south-r1-g2": "vanderbilt",// (5) Vanderbilt 78, (12) McNeese 68
+  "south-r1-g3": "nebraska",  // (4) Nebraska 76, (13) Troy 47
+  "south-r1-g4": "vcu",       // (11) VCU 82, (6) North Carolina 78 OT
+  "south-r1-g5": "illinois",  // (3) Illinois 105, (14) Penn 70
+  "south-r1-g6": "texas-am",  // (10) Texas A&M 63, (7) Saint Mary's 50
+  "south-r1-g7": "houston",   // (2) Houston 78, (15) Idaho 47
+  // Midwest Region
+  "midwest-r1-g0": "michigan",    // (1) Michigan 101, (16) Howard 80
+  "midwest-r1-g1": "saint-louis", // (9) Saint Louis 102, (8) Georgia 77
+};
+
 export const bracketData: BracketData = {
   year: 2026,
   regions: {

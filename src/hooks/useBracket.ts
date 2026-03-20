@@ -3,35 +3,44 @@
 import { useState, useCallback, useEffect } from "react";
 import { Picks, RegionName, FirstFourGame } from "@/lib/types";
 import { makePick, makeFirstFourPick } from "@/lib/bracket";
-import { bracketData } from "@/data/bracket-2026";
+import { bracketData, completedResults } from "@/data/bracket-2026";
 
 const STORAGE_KEY = "bracket-ai-picks";
 
-/** Build picks for completed First Four games (locked results) */
-function getLockedFirstFourPicks(): Picks {
+/** Build picks for all locked games (First Four + completed regular games) */
+function getLockedPicks(): Picks {
   const locked: Picks = {};
+  // First Four locked results
   for (const ff of bracketData.firstFour) {
     if (ff.winner === "teamA") locked[ff.id] = ff.teamA.id;
     else if (ff.winner === "teamB") locked[ff.id] = ff.teamB.id;
   }
+  // Completed regular game results
+  for (const [gameId, teamId] of Object.entries(completedResults)) {
+    locked[gameId] = teamId;
+  }
   return locked;
 }
 
-/** IDs of First Four games that are locked */
+/** IDs of all games that are locked (can't be changed) */
 function getLockedGameIds(): Set<string> {
-  return new Set(
+  const ids = new Set(
     bracketData.firstFour.filter((ff) => ff.winner).map((ff) => ff.id)
   );
+  for (const gameId of Object.keys(completedResults)) {
+    ids.add(gameId);
+  }
+  return ids;
 }
 
 function loadInitialPicks(): Picks {
-  if (typeof window === "undefined") return getLockedFirstFourPicks();
+  if (typeof window === "undefined") return getLockedPicks();
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     const loaded = saved ? JSON.parse(saved) : {};
-    return { ...loaded, ...getLockedFirstFourPicks() };
+    return { ...loaded, ...getLockedPicks() };
   } catch {
-    return getLockedFirstFourPicks();
+    return getLockedPicks();
   }
 }
 
@@ -86,6 +95,9 @@ export function useBracket() {
         }
 
         // Regional game
+        // Don't allow changing locked/completed results
+        if (getLockedGameIds().has(gameId)) return prev;
+
         const parts = gameId.split("-");
         const region = parts[0] as RegionName;
         const round = parseInt(parts[1].slice(1));
@@ -124,7 +136,7 @@ export function useBracket() {
 
   const resetBracket = useCallback(() => {
     // Reset everything except locked First Four results
-    const locked = getLockedFirstFourPicks();
+    const locked = getLockedPicks();
     setPicks(locked);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(locked));
   }, []);
